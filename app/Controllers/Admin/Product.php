@@ -60,7 +60,8 @@ class Product extends BaseController
             //load_editor($this->data);
 
             $category_model = model("CategoryModel");
-            $this->data['category'] = $category_model->findAll();
+            $this->data['category'] = $category_model->where("is_menu", 0)->findAll();
+            $this->data['menu'] = $category_model->where("is_menu", 1)->findAll();
             return view($this->data['content'], $this->data);
         }
     }
@@ -148,7 +149,8 @@ class Product extends BaseController
             //load_editor($this->data);
             //            load_chossen($this->data);
 
-            $this->data['category'] = $category_model->findAll();
+            $this->data['category'] = $category_model->where("is_menu", 0)->findAll();
+            $this->data['menu'] = $category_model->where("is_menu", 1)->findAll();
             return view($this->data['content'], $this->data);
         }
     }
