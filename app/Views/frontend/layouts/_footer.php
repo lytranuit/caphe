@@ -1,5 +1,5 @@
 <footer class="footer">
-    <div class="top-footer top_footer">
+    <div class="top-footer top_footer" >
         <div class="section_service_end">
             <div class="container">
                 <div class="row row-noGutter">
@@ -104,11 +104,12 @@
     </div>
     <div class="mid-footer mid_footer">
         <div class="container">
-            <div class="row">
+            <div class="row" style="padding: 61px 0px;">>
                 <div class="col-lg-5 col-md-6 col-sm-6 col-xs-12">
                     <div class="box-maps">
                         <div class="iFrameMap">
-                            <a href="/lien-he" class="google-map">
+                            <a href="/lien-he">
+                                <img src="<?= base_url("assets/images/map.png") ?>" />
                             </a>
                         </div>
                     </div>
@@ -119,8 +120,11 @@
                             <ul class="contact">
                                 <li>
                                     <p class="summary_footer">
-                                        Chúng tôi là Coffee House
+                                        Chúng tôi là Coffee Huy Tùng
                                     </p>
+                                </li>
+                                <li>
+                                    <p class="txt_content_child">Thương hiệu Huy Tùng Coffee được thành lập từ đầu năm 1980 và liên tục phát triển đến ngày hôm nay.</p>
                                 </li>
                                 <li class="li_footer_h">
                                     <div class="icon_base">
@@ -129,7 +133,7 @@
                                     <span class="txt_content_child">
                                         Trụ sở chính:
 
-                                        Tầng 6 toà nhà Ladeco, 266 Đội Cấn, phường Liễu Giai, Hà Nội
+                                        125 Nguyễn Trãi, P.5, TP Tuy Hòa, Phú Yên
 
                                     </span>
                                 </li>
@@ -138,7 +142,7 @@
                                         <i class="fas fa-phone"></i>
                                     </div>
 
-                                    <a href="tel:18006750">18006750</a>
+                                    <a href="tel:0913445558">0913.445.558</a>
 
                                 </li>
                                 <li class="li_footer_h">
@@ -146,82 +150,46 @@
                                         <i class="fas fa-envelope"></i>
                                     </div>
 
-                                    <a href="mailto:support@sapo.vn"> support@sapo.vn</a>
+                                    <a href="mailto:lienhe@huytungcoffee.com">lienhe@huytungcoffee.com</a>
 
                                 </li>
                             </ul>
-                            <div class="fot_menu_copyright social_footer">
-                                <ul class="follow_option">
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col_nth">
+                            <h4 class="title-menu">
+                                <a role="button" class="collapsed" data-toggle="collapse" aria-expanded="false" data-target="#collapseListMenu02" aria-controls="collapseListMenu02">
+                                    Thông tin <i class="fa fa-plus" aria-hidden="true"></i>
+                                </a>
+                            </h4>
+                            <div class="collapse time_work" id="collapseListMenu02">
+                                <ul class="list-menu">
 
-                                    <li>
-                                        <a href="#" title="Theo dõi Facebook Coffee House"><i class="fab fa-facebook-f"></i></a>
-                                    </li>
+                                    <li class="li_menu"><a href="/">Trang chủ</a></li>
 
+                                    <li class="li_menu"><a href="/gioi-thieu">Giới thiệu</a></li>
 
-                                    <li>
-                                        <a href="#" title="Theo dõi Google Coffee House"><i class="fab fa-google-plus-g"></i></a>
-                                    </li>
+                                    <li class="li_menu"><a href="/collections/all">Sản phẩm</a></li>
 
+                                    <li class="li_menu"><a href="/tin-tuc">Dịch vụ</a></li>
 
-                                    <li>
-                                        <a href="#" title="Theo dõi Twitter Coffee House"><i class="fab fa-twitter"></i></a>
-                                    </li>
+                                    <li class="li_menu"><a href="/tin-tuc">Tin tức</a></li>
+
+                                    <li class="li_menu"><a href="/lien-he">Liên hệ</a></li>
 
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col_nth">
-                            <div class="widget-ft first">
-                                <h4 class="title-menu">
-                                    <a role="button" class="collapsed" data-toggle="collapse" aria-expanded="false" data-target="#collapseListMenu01" aria-controls="collapseListMenu01">
-                                        Chăm sóc khách hàng <i class="fa fa-plus" aria-hidden="true"></i>
-                                    </a>
-                                </h4>
-                                <div class="collapse" id="collapseListMenu01">
-                                    <ul class="list-menu">
+                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 col_nth">
+                            <h4 class="title-menu">
+                                <a role="button" class="collapsed" data-toggle="collapse" aria-expanded="false" data-target="#collapseListMenu01" aria-controls="collapseListMenu01">
+                                    Facebook <i class="fa fa-plus" aria-hidden="true"></i>
+                                </a>
+                            </h4>
+                            <div class="collapse" id="collapseListMenu01">
 
-                                        <li class="li_menu"><a href="/">Trang chủ</a></li>
-
-                                        <li class="li_menu"><a href="/gioi-thieu">Giới thiệu</a></li>
-
-                                        <li class="li_menu"><a href="/collections/all">Sản phẩm</a></li>
-
-                                        <li class="li_menu"><a href="/tin-tuc">Dịch vụ</a></li>
-
-                                        <li class="li_menu"><a href="/tin-tuc">Tin tức</a></li>
-
-                                        <li class="li_menu"><a href="/lien-he">Liên hệ</a></li>
-
-                                    </ul>
-                                </div>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col_nth">
-                            <div class="widget-ft">
-                                <h4 class="title-menu">
-                                    <a role="button" class="collapsed" data-toggle="collapse" aria-expanded="false" data-target="#collapseListMenu02" aria-controls="collapseListMenu02">
-                                        Liên hệ với chúng tôi <i class="fa fa-plus" aria-hidden="true"></i>
-                                    </a>
-                                </h4>
-                                <div class="collapse time_work" id="collapseListMenu02">
-                                    <ul class="list-menu">
 
-                                        <li class="li_menu"><a href="/">Trang chủ</a></li>
-
-                                        <li class="li_menu"><a href="/gioi-thieu">Giới thiệu</a></li>
-
-                                        <li class="li_menu"><a href="/collections/all">Sản phẩm</a></li>
-
-                                        <li class="li_menu"><a href="/tin-tuc">Dịch vụ</a></li>
-
-                                        <li class="li_menu"><a href="/tin-tuc">Tin tức</a></li>
-
-                                        <li class="li_menu"><a href="/lien-he">Liên hệ</a></li>
-
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>

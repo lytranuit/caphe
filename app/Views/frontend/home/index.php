@@ -4,61 +4,832 @@
 <?= $this->section('content') ?>
 
 <div class="section_slider">
-    <div class="home-slider section_slider swiper-container swiper-container-initialized swiper-container-horizontal">
-        <div class="swiper-wrapper" id="swiper-wrapper-1375be3df72c34ff" aria-live="off" style="transform: translate3d(-1920px, 0px, 0px); transition: all 0ms ease 0s;">
-
-
-
-
-
-
-            <div class="swiper-slide swiper-slide-prev" role="group" aria-label="1 / 2" style="width: 1920px;">
+    <div class="home-slider section_slider swiper-container">
+        <div class="swiper-wrapper" id="swiper-wrapper-1375be3df72c34ff">
+            <div class="swiper-slide" role="group" aria-label="1 / 2">
                 <a href="#" class="clearfix" title="Slider 1">
                     <picture>
                         <source media="(max-width: 767px)" srcset="//bizweb.dktcdn.net/thumb/grande/100/346/521/themes/818256/assets/slider_1.jpg?1619594503248">
-                        <img src="//bizweb.dktcdn.net/100/346/521/themes/818256/assets/slider_1.jpg?1619594503248" alt="Slider 1">
+                        <img src="<?= base_url("assets/images/slider_1.jpg") ?>" alt="Slider 1">
                     </picture>
                 </a>
             </div>
-
-
-
-
-
-
-
-            <div class="swiper-slide swiper-slide-active" role="group" aria-label="2 / 2" style="width: 1920px;">
-                <a href="#" class="clearfix" title="Slider 2">
-                    <picture>
-                        <source media="(max-width: 767px)" srcset="//bizweb.dktcdn.net/thumb/grande/100/346/521/themes/818256/assets/slider_2.jpg?1619594503248">
-                        <img src="//bizweb.dktcdn.net/100/346/521/themes/818256/assets/slider_2.jpg?1619594503248" alt="Slider 2">
-                    </picture>
-                </a>
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         </div>
-
-        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
     </div>
+    <script>
+        var swiper = new Swiper('.home-slider', {
+            autoplay: {
+                delay: 4500,
+                disableOnInteraction: false
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.home-slider .swiper-button-next',
+                prevEl: '.home-slider .swiper-button-prev',
+            }
+        });
+    </script>
+</div>
+<div class="section_sanpham">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12" style="margin-bottom:20px">
+                <div class="m_product pt-xl-7 pb-2 pt-5 " wfd-id="492">
+                    <h2 class="title mb-5 text-uppercase font-weight-bold text-center">
+                        <a class="position-relative banner-w modal-open" href="san-pham-noi-bat" title="Sản phẩm nổi bật">Sản phẩm nổi bật</a>
+                    </h2>
+                    <div class="b_product swiper-container" wfd-id="493">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" wfd-id="591">
+                                <div class="product-item position-relative product-item-main mb-3" wfd-id="592">
+                                    <a href="/giay-ultraboost-21-black" class="thumb flip effect-ming d-block" title="GIÀY ULTRABOOST 21 - Black">
+                                        <div class="item-image position-relative w-100 m-0 aspect ratio1by1" wfd-id="602">
+                                            <img src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" data-src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" class="d-block image-1 img img-contain position-absolute w-100 h-100 lazy" alt="GIÀY ULTRABOOST 21 - Black">
+                                            <div class="w-100 h-100 overlay" wfd-id="603"></div>
+                                        </div>
+                                    </a>
+                                    <div class="item-info text-left p-2" wfd-id="593">
+                                        <div class="item-title font-weight-bold m-0 line_1 mt-1">
+                                            <a class="d-block name_product" href="/giay-ultraboost-21-black" title="GIÀY ULTRABOOST 21 - Black">GIÀY ULTRABOOST 21 - Black</a>
+                                        </div>
+                                        <div class="item-content" wfd-id="594">
+                                            <div class="item-price mt-1" wfd-id="595">
+                                                <span class="special-price font-weight-bold" wfd-id="596">5.000.000₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" wfd-id="591">
+                                <div class="product-item position-relative product-item-main mb-3" wfd-id="592">
+                                    <a href="/giay-ultraboost-21-black" class="thumb flip effect-ming d-block" title="GIÀY ULTRABOOST 21 - Black">
+                                        <div class="item-image position-relative w-100 m-0 aspect ratio1by1" wfd-id="602">
+                                            <img src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" data-src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" class="d-block image-1 img img-contain position-absolute w-100 h-100 lazy" alt="GIÀY ULTRABOOST 21 - Black">
+                                            <div class="w-100 h-100 overlay" wfd-id="603"></div>
+                                        </div>
+                                    </a>
+                                    <div class="item-info text-left p-2" wfd-id="593">
+                                        <div class="item-title font-weight-bold m-0 line_1 mt-1">
+                                            <a class="d-block name_product" href="/giay-ultraboost-21-black" title="GIÀY ULTRABOOST 21 - Black">GIÀY ULTRABOOST 21 - Black</a>
+                                        </div>
+                                        <div class="item-content" wfd-id="594">
+                                            <div class="item-price mt-1" wfd-id="595">
+                                                <span class="special-price font-weight-bold" wfd-id="596">5.000.000₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" wfd-id="591">
+                                <div class="product-item position-relative product-item-main mb-3" wfd-id="592">
+                                    <a href="/giay-ultraboost-21-black" class="thumb flip effect-ming d-block" title="GIÀY ULTRABOOST 21 - Black">
+                                        <div class="item-image position-relative w-100 m-0 aspect ratio1by1" wfd-id="602">
+                                            <img src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" data-src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" class="d-block image-1 img img-contain position-absolute w-100 h-100 lazy" alt="GIÀY ULTRABOOST 21 - Black">
+                                            <div class="w-100 h-100 overlay" wfd-id="603"></div>
+                                        </div>
+                                    </a>
+                                    <div class="item-info text-left p-2" wfd-id="593">
+                                        <div class="item-title font-weight-bold m-0 line_1 mt-1">
+                                            <a class="d-block name_product" href="/giay-ultraboost-21-black" title="GIÀY ULTRABOOST 21 - Black">GIÀY ULTRABOOST 21 - Black</a>
+                                        </div>
+                                        <div class="item-content" wfd-id="594">
+                                            <div class="item-price mt-1" wfd-id="595">
+                                                <span class="special-price font-weight-bold" wfd-id="596">5.000.000₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" wfd-id="591">
+                                <div class="product-item position-relative product-item-main mb-3" wfd-id="592">
+                                    <a href="/giay-ultraboost-21-black" class="thumb flip effect-ming d-block" title="GIÀY ULTRABOOST 21 - Black">
+                                        <div class="item-image position-relative w-100 m-0 aspect ratio1by1" wfd-id="602">
+                                            <img src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" data-src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" class="d-block image-1 img img-contain position-absolute w-100 h-100 lazy" alt="GIÀY ULTRABOOST 21 - Black">
+                                            <div class="w-100 h-100 overlay" wfd-id="603"></div>
+                                        </div>
+                                    </a>
+                                    <div class="item-info text-left p-2" wfd-id="593">
+                                        <div class="item-title font-weight-bold m-0 line_1 mt-1">
+                                            <a class="d-block name_product" href="/giay-ultraboost-21-black" title="GIÀY ULTRABOOST 21 - Black">GIÀY ULTRABOOST 21 - Black</a>
+                                        </div>
+                                        <div class="item-content" wfd-id="594">
+                                            <div class="item-price mt-1" wfd-id="595">
+                                                <span class="special-price font-weight-bold" wfd-id="596">5.000.000₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" wfd-id="591">
+                                <div class="product-item position-relative product-item-main mb-3" wfd-id="592">
+                                    <a href="/giay-ultraboost-21-black" class="thumb flip effect-ming d-block" title="GIÀY ULTRABOOST 21 - Black">
+                                        <div class="item-image position-relative w-100 m-0 aspect ratio1by1" wfd-id="602">
+                                            <img src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" data-src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" class="d-block image-1 img img-contain position-absolute w-100 h-100 lazy" alt="GIÀY ULTRABOOST 21 - Black">
+                                            <div class="w-100 h-100 overlay" wfd-id="603"></div>
+                                        </div>
+                                    </a>
+                                    <div class="item-info text-left p-2" wfd-id="593">
+                                        <div class="item-title font-weight-bold m-0 line_1 mt-1">
+                                            <a class="d-block name_product" href="/giay-ultraboost-21-black" title="GIÀY ULTRABOOST 21 - Black">GIÀY ULTRABOOST 21 - Black</a>
+                                        </div>
+                                        <div class="item-content" wfd-id="594">
+                                            <div class="item-price mt-1" wfd-id="595">
+                                                <span class="special-price font-weight-bold" wfd-id="596">5.000.000₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" wfd-id="591">
+                                <div class="product-item position-relative product-item-main mb-3" wfd-id="592">
+                                    <a href="/giay-ultraboost-21-black" class="thumb flip effect-ming d-block" title="GIÀY ULTRABOOST 21 - Black">
+                                        <div class="item-image position-relative w-100 m-0 aspect ratio1by1" wfd-id="602">
+                                            <img src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" data-src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" class="d-block image-1 img img-contain position-absolute w-100 h-100 lazy" alt="GIÀY ULTRABOOST 21 - Black">
+                                            <div class="w-100 h-100 overlay" wfd-id="603"></div>
+                                        </div>
+                                    </a>
+                                    <div class="item-info text-left p-2" wfd-id="593">
+                                        <div class="item-title font-weight-bold m-0 line_1 mt-1">
+                                            <a class="d-block name_product" href="/giay-ultraboost-21-black" title="GIÀY ULTRABOOST 21 - Black">GIÀY ULTRABOOST 21 - Black</a>
+                                        </div>
+                                        <div class="item-content" wfd-id="594">
+                                            <div class="item-price mt-1" wfd-id="595">
+                                                <span class="special-price font-weight-bold" wfd-id="596">5.000.000₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" wfd-id="591">
+                                <div class="product-item position-relative product-item-main mb-3" wfd-id="592">
+                                    <a href="/giay-ultraboost-21-black" class="thumb flip effect-ming d-block" title="GIÀY ULTRABOOST 21 - Black">
+                                        <div class="item-image position-relative w-100 m-0 aspect ratio1by1" wfd-id="602">
+                                            <img src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" data-src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" class="d-block image-1 img img-contain position-absolute w-100 h-100 lazy" alt="GIÀY ULTRABOOST 21 - Black">
+                                            <div class="w-100 h-100 overlay" wfd-id="603"></div>
+                                        </div>
+                                    </a>
+                                    <div class="item-info text-left p-2" wfd-id="593">
+                                        <div class="item-title font-weight-bold m-0 line_1 mt-1">
+                                            <a class="d-block name_product" href="/giay-ultraboost-21-black" title="GIÀY ULTRABOOST 21 - Black">GIÀY ULTRABOOST 21 - Black</a>
+                                        </div>
+                                        <div class="item-content" wfd-id="594">
+                                            <div class="item-price mt-1" wfd-id="595">
+                                                <span class="special-price font-weight-bold" wfd-id="596">5.000.000₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" wfd-id="591">
+                                <div class="product-item position-relative product-item-main mb-3" wfd-id="592">
+                                    <a href="/giay-ultraboost-21-black" class="thumb flip effect-ming d-block" title="GIÀY ULTRABOOST 21 - Black">
+                                        <div class="item-image position-relative w-100 m-0 aspect ratio1by1" wfd-id="602">
+                                            <img src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" data-src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" class="d-block image-1 img img-contain position-absolute w-100 h-100 lazy" alt="GIÀY ULTRABOOST 21 - Black">
+                                            <div class="w-100 h-100 overlay" wfd-id="603"></div>
+                                        </div>
+                                    </a>
+                                    <div class="item-info text-left p-2" wfd-id="593">
+                                        <div class="item-title font-weight-bold m-0 line_1 mt-1">
+                                            <a class="d-block name_product" href="/giay-ultraboost-21-black" title="GIÀY ULTRABOOST 21 - Black">GIÀY ULTRABOOST 21 - Black</a>
+                                        </div>
+                                        <div class="item-content" wfd-id="594">
+                                            <div class="item-price mt-1" wfd-id="595">
+                                                <span class="special-price font-weight-bold" wfd-id="596">5.000.000₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" wfd-id="591">
+                                <div class="product-item position-relative product-item-main mb-3" wfd-id="592">
+                                    <a href="/giay-ultraboost-21-black" class="thumb flip effect-ming d-block" title="GIÀY ULTRABOOST 21 - Black">
+                                        <div class="item-image position-relative w-100 m-0 aspect ratio1by1" wfd-id="602">
+                                            <img src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" data-src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" class="d-block image-1 img img-contain position-absolute w-100 h-100 lazy" alt="GIÀY ULTRABOOST 21 - Black">
+                                            <div class="w-100 h-100 overlay" wfd-id="603"></div>
+                                        </div>
+                                    </a>
+                                    <div class="item-info text-left p-2" wfd-id="593">
+                                        <div class="item-title font-weight-bold m-0 line_1 mt-1">
+                                            <a class="d-block name_product" href="/giay-ultraboost-21-black" title="GIÀY ULTRABOOST 21 - Black">GIÀY ULTRABOOST 21 - Black</a>
+                                        </div>
+                                        <div class="item-content" wfd-id="594">
+                                            <div class="item-price mt-1" wfd-id="595">
+                                                <span class="special-price font-weight-bold" wfd-id="596">5.000.000₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" wfd-id="591">
+                                <div class="product-item position-relative product-item-main mb-3" wfd-id="592">
+                                    <a href="/giay-ultraboost-21-black" class="thumb flip effect-ming d-block" title="GIÀY ULTRABOOST 21 - Black">
+                                        <div class="item-image position-relative w-100 m-0 aspect ratio1by1" wfd-id="602">
+                                            <img src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" data-src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" class="d-block image-1 img img-contain position-absolute w-100 h-100 lazy" alt="GIÀY ULTRABOOST 21 - Black">
+                                            <div class="w-100 h-100 overlay" wfd-id="603"></div>
+                                        </div>
+                                    </a>
+                                    <div class="item-info text-left p-2" wfd-id="593">
+                                        <div class="item-title font-weight-bold m-0 line_1 mt-1">
+                                            <a class="d-block name_product" href="/giay-ultraboost-21-black" title="GIÀY ULTRABOOST 21 - Black">GIÀY ULTRABOOST 21 - Black</a>
+                                        </div>
+                                        <div class="item-content" wfd-id="594">
+                                            <div class="item-price mt-1" wfd-id="595">
+                                                <span class="special-price font-weight-bold" wfd-id="596">5.000.000₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" wfd-id="591">
+                                <div class="product-item position-relative product-item-main mb-3" wfd-id="592">
+                                    <a href="/giay-ultraboost-21-black" class="thumb flip effect-ming d-block" title="GIÀY ULTRABOOST 21 - Black">
+                                        <div class="item-image position-relative w-100 m-0 aspect ratio1by1" wfd-id="602">
+                                            <img src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" data-src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" class="d-block image-1 img img-contain position-absolute w-100 h-100 lazy" alt="GIÀY ULTRABOOST 21 - Black">
+                                            <div class="w-100 h-100 overlay" wfd-id="603"></div>
+                                        </div>
+                                    </a>
+                                    <div class="item-info text-left p-2" wfd-id="593">
+                                        <div class="item-title font-weight-bold m-0 line_1 mt-1">
+                                            <a class="d-block name_product" href="/giay-ultraboost-21-black" title="GIÀY ULTRABOOST 21 - Black">GIÀY ULTRABOOST 21 - Black</a>
+                                        </div>
+                                        <div class="item-content" wfd-id="594">
+                                            <div class="item-price mt-1" wfd-id="595">
+                                                <span class="special-price font-weight-bold" wfd-id="596">5.000.000₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" wfd-id="591">
+                                <div class="product-item position-relative product-item-main mb-3" wfd-id="592">
+                                    <a href="/giay-ultraboost-21-black" class="thumb flip effect-ming d-block" title="GIÀY ULTRABOOST 21 - Black">
+                                        <div class="item-image position-relative w-100 m-0 aspect ratio1by1" wfd-id="602">
+                                            <img src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" data-src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" class="d-block image-1 img img-contain position-absolute w-100 h-100 lazy" alt="GIÀY ULTRABOOST 21 - Black">
+                                            <div class="w-100 h-100 overlay" wfd-id="603"></div>
+                                        </div>
+                                    </a>
+                                    <div class="item-info text-left p-2" wfd-id="593">
+                                        <div class="item-title font-weight-bold m-0 line_1 mt-1">
+                                            <a class="d-block name_product" href="/giay-ultraboost-21-black" title="GIÀY ULTRABOOST 21 - Black">GIÀY ULTRABOOST 21 - Black</a>
+                                        </div>
+                                        <div class="item-content" wfd-id="594">
+                                            <div class="item-price mt-1" wfd-id="595">
+                                                <span class="special-price font-weight-bold" wfd-id="596">5.000.000₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-button-prev b1_prev" tabindex="-1" role="button" aria-label="Previous slide" aria-disabled="true" wfd-id="496"></div>
+                        <div class="swiper-button-next b1_next" tabindex="0" role="button" aria-label="Next slide" aria-disabled="false" wfd-id="495"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12" style="margin-bottom:20px">
+                <div class="m_product pt-xl-7 pb-2 pt-5 " wfd-id="492">
+                    <h2 class="title mb-5 text-uppercase font-weight-bold text-center">
+                        <a class="position-relative banner-w modal-open" href="san-pham-noi-bat" title="Sản phẩm nổi bật">Sản phẩm nổi bật</a>
+                    </h2>
+                    <div class="b_product swiper-container" wfd-id="493">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" wfd-id="591">
+                                <div class="product-item position-relative product-item-main mb-3" wfd-id="592">
+                                    <a href="/giay-ultraboost-21-black" class="thumb flip effect-ming d-block" title="GIÀY ULTRABOOST 21 - Black">
+                                        <div class="item-image position-relative w-100 m-0 aspect ratio1by1" wfd-id="602">
+                                            <img src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" data-src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" class="d-block image-1 img img-contain position-absolute w-100 h-100 lazy" alt="GIÀY ULTRABOOST 21 - Black">
+                                            <div class="w-100 h-100 overlay" wfd-id="603"></div>
+                                        </div>
+                                    </a>
+                                    <div class="item-info text-left p-2" wfd-id="593">
+                                        <div class="item-title font-weight-bold m-0 line_1 mt-1">
+                                            <a class="d-block name_product" href="/giay-ultraboost-21-black" title="GIÀY ULTRABOOST 21 - Black">GIÀY ULTRABOOST 21 - Black</a>
+                                        </div>
+                                        <div class="item-content" wfd-id="594">
+                                            <div class="item-price mt-1" wfd-id="595">
+                                                <span class="special-price font-weight-bold" wfd-id="596">5.000.000₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" wfd-id="591">
+                                <div class="product-item position-relative product-item-main mb-3" wfd-id="592">
+                                    <a href="/giay-ultraboost-21-black" class="thumb flip effect-ming d-block" title="GIÀY ULTRABOOST 21 - Black">
+                                        <div class="item-image position-relative w-100 m-0 aspect ratio1by1" wfd-id="602">
+                                            <img src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" data-src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" class="d-block image-1 img img-contain position-absolute w-100 h-100 lazy" alt="GIÀY ULTRABOOST 21 - Black">
+                                            <div class="w-100 h-100 overlay" wfd-id="603"></div>
+                                        </div>
+                                    </a>
+                                    <div class="item-info text-left p-2" wfd-id="593">
+                                        <div class="item-title font-weight-bold m-0 line_1 mt-1">
+                                            <a class="d-block name_product" href="/giay-ultraboost-21-black" title="GIÀY ULTRABOOST 21 - Black">GIÀY ULTRABOOST 21 - Black</a>
+                                        </div>
+                                        <div class="item-content" wfd-id="594">
+                                            <div class="item-price mt-1" wfd-id="595">
+                                                <span class="special-price font-weight-bold" wfd-id="596">5.000.000₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" wfd-id="591">
+                                <div class="product-item position-relative product-item-main mb-3" wfd-id="592">
+                                    <a href="/giay-ultraboost-21-black" class="thumb flip effect-ming d-block" title="GIÀY ULTRABOOST 21 - Black">
+                                        <div class="item-image position-relative w-100 m-0 aspect ratio1by1" wfd-id="602">
+                                            <img src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" data-src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" class="d-block image-1 img img-contain position-absolute w-100 h-100 lazy" alt="GIÀY ULTRABOOST 21 - Black">
+                                            <div class="w-100 h-100 overlay" wfd-id="603"></div>
+                                        </div>
+                                    </a>
+                                    <div class="item-info text-left p-2" wfd-id="593">
+                                        <div class="item-title font-weight-bold m-0 line_1 mt-1">
+                                            <a class="d-block name_product" href="/giay-ultraboost-21-black" title="GIÀY ULTRABOOST 21 - Black">GIÀY ULTRABOOST 21 - Black</a>
+                                        </div>
+                                        <div class="item-content" wfd-id="594">
+                                            <div class="item-price mt-1" wfd-id="595">
+                                                <span class="special-price font-weight-bold" wfd-id="596">5.000.000₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" wfd-id="591">
+                                <div class="product-item position-relative product-item-main mb-3" wfd-id="592">
+                                    <a href="/giay-ultraboost-21-black" class="thumb flip effect-ming d-block" title="GIÀY ULTRABOOST 21 - Black">
+                                        <div class="item-image position-relative w-100 m-0 aspect ratio1by1" wfd-id="602">
+                                            <img src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" data-src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" class="d-block image-1 img img-contain position-absolute w-100 h-100 lazy" alt="GIÀY ULTRABOOST 21 - Black">
+                                            <div class="w-100 h-100 overlay" wfd-id="603"></div>
+                                        </div>
+                                    </a>
+                                    <div class="item-info text-left p-2" wfd-id="593">
+                                        <div class="item-title font-weight-bold m-0 line_1 mt-1">
+                                            <a class="d-block name_product" href="/giay-ultraboost-21-black" title="GIÀY ULTRABOOST 21 - Black">GIÀY ULTRABOOST 21 - Black</a>
+                                        </div>
+                                        <div class="item-content" wfd-id="594">
+                                            <div class="item-price mt-1" wfd-id="595">
+                                                <span class="special-price font-weight-bold" wfd-id="596">5.000.000₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" wfd-id="591">
+                                <div class="product-item position-relative product-item-main mb-3" wfd-id="592">
+                                    <a href="/giay-ultraboost-21-black" class="thumb flip effect-ming d-block" title="GIÀY ULTRABOOST 21 - Black">
+                                        <div class="item-image position-relative w-100 m-0 aspect ratio1by1" wfd-id="602">
+                                            <img src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" data-src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" class="d-block image-1 img img-contain position-absolute w-100 h-100 lazy" alt="GIÀY ULTRABOOST 21 - Black">
+                                            <div class="w-100 h-100 overlay" wfd-id="603"></div>
+                                        </div>
+                                    </a>
+                                    <div class="item-info text-left p-2" wfd-id="593">
+                                        <div class="item-title font-weight-bold m-0 line_1 mt-1">
+                                            <a class="d-block name_product" href="/giay-ultraboost-21-black" title="GIÀY ULTRABOOST 21 - Black">GIÀY ULTRABOOST 21 - Black</a>
+                                        </div>
+                                        <div class="item-content" wfd-id="594">
+                                            <div class="item-price mt-1" wfd-id="595">
+                                                <span class="special-price font-weight-bold" wfd-id="596">5.000.000₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" wfd-id="591">
+                                <div class="product-item position-relative product-item-main mb-3" wfd-id="592">
+                                    <a href="/giay-ultraboost-21-black" class="thumb flip effect-ming d-block" title="GIÀY ULTRABOOST 21 - Black">
+                                        <div class="item-image position-relative w-100 m-0 aspect ratio1by1" wfd-id="602">
+                                            <img src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" data-src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" class="d-block image-1 img img-contain position-absolute w-100 h-100 lazy" alt="GIÀY ULTRABOOST 21 - Black">
+                                            <div class="w-100 h-100 overlay" wfd-id="603"></div>
+                                        </div>
+                                    </a>
+                                    <div class="item-info text-left p-2" wfd-id="593">
+                                        <div class="item-title font-weight-bold m-0 line_1 mt-1">
+                                            <a class="d-block name_product" href="/giay-ultraboost-21-black" title="GIÀY ULTRABOOST 21 - Black">GIÀY ULTRABOOST 21 - Black</a>
+                                        </div>
+                                        <div class="item-content" wfd-id="594">
+                                            <div class="item-price mt-1" wfd-id="595">
+                                                <span class="special-price font-weight-bold" wfd-id="596">5.000.000₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" wfd-id="591">
+                                <div class="product-item position-relative product-item-main mb-3" wfd-id="592">
+                                    <a href="/giay-ultraboost-21-black" class="thumb flip effect-ming d-block" title="GIÀY ULTRABOOST 21 - Black">
+                                        <div class="item-image position-relative w-100 m-0 aspect ratio1by1" wfd-id="602">
+                                            <img src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" data-src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" class="d-block image-1 img img-contain position-absolute w-100 h-100 lazy" alt="GIÀY ULTRABOOST 21 - Black">
+                                            <div class="w-100 h-100 overlay" wfd-id="603"></div>
+                                        </div>
+                                    </a>
+                                    <div class="item-info text-left p-2" wfd-id="593">
+                                        <div class="item-title font-weight-bold m-0 line_1 mt-1">
+                                            <a class="d-block name_product" href="/giay-ultraboost-21-black" title="GIÀY ULTRABOOST 21 - Black">GIÀY ULTRABOOST 21 - Black</a>
+                                        </div>
+                                        <div class="item-content" wfd-id="594">
+                                            <div class="item-price mt-1" wfd-id="595">
+                                                <span class="special-price font-weight-bold" wfd-id="596">5.000.000₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" wfd-id="591">
+                                <div class="product-item position-relative product-item-main mb-3" wfd-id="592">
+                                    <a href="/giay-ultraboost-21-black" class="thumb flip effect-ming d-block" title="GIÀY ULTRABOOST 21 - Black">
+                                        <div class="item-image position-relative w-100 m-0 aspect ratio1by1" wfd-id="602">
+                                            <img src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" data-src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" class="d-block image-1 img img-contain position-absolute w-100 h-100 lazy" alt="GIÀY ULTRABOOST 21 - Black">
+                                            <div class="w-100 h-100 overlay" wfd-id="603"></div>
+                                        </div>
+                                    </a>
+                                    <div class="item-info text-left p-2" wfd-id="593">
+                                        <div class="item-title font-weight-bold m-0 line_1 mt-1">
+                                            <a class="d-block name_product" href="/giay-ultraboost-21-black" title="GIÀY ULTRABOOST 21 - Black">GIÀY ULTRABOOST 21 - Black</a>
+                                        </div>
+                                        <div class="item-content" wfd-id="594">
+                                            <div class="item-price mt-1" wfd-id="595">
+                                                <span class="special-price font-weight-bold" wfd-id="596">5.000.000₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" wfd-id="591">
+                                <div class="product-item position-relative product-item-main mb-3" wfd-id="592">
+                                    <a href="/giay-ultraboost-21-black" class="thumb flip effect-ming d-block" title="GIÀY ULTRABOOST 21 - Black">
+                                        <div class="item-image position-relative w-100 m-0 aspect ratio1by1" wfd-id="602">
+                                            <img src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" data-src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" class="d-block image-1 img img-contain position-absolute w-100 h-100 lazy" alt="GIÀY ULTRABOOST 21 - Black">
+                                            <div class="w-100 h-100 overlay" wfd-id="603"></div>
+                                        </div>
+                                    </a>
+                                    <div class="item-info text-left p-2" wfd-id="593">
+                                        <div class="item-title font-weight-bold m-0 line_1 mt-1">
+                                            <a class="d-block name_product" href="/giay-ultraboost-21-black" title="GIÀY ULTRABOOST 21 - Black">GIÀY ULTRABOOST 21 - Black</a>
+                                        </div>
+                                        <div class="item-content" wfd-id="594">
+                                            <div class="item-price mt-1" wfd-id="595">
+                                                <span class="special-price font-weight-bold" wfd-id="596">5.000.000₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" wfd-id="591">
+                                <div class="product-item position-relative product-item-main mb-3" wfd-id="592">
+                                    <a href="/giay-ultraboost-21-black" class="thumb flip effect-ming d-block" title="GIÀY ULTRABOOST 21 - Black">
+                                        <div class="item-image position-relative w-100 m-0 aspect ratio1by1" wfd-id="602">
+                                            <img src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" data-src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" class="d-block image-1 img img-contain position-absolute w-100 h-100 lazy" alt="GIÀY ULTRABOOST 21 - Black">
+                                            <div class="w-100 h-100 overlay" wfd-id="603"></div>
+                                        </div>
+                                    </a>
+                                    <div class="item-info text-left p-2" wfd-id="593">
+                                        <div class="item-title font-weight-bold m-0 line_1 mt-1">
+                                            <a class="d-block name_product" href="/giay-ultraboost-21-black" title="GIÀY ULTRABOOST 21 - Black">GIÀY ULTRABOOST 21 - Black</a>
+                                        </div>
+                                        <div class="item-content" wfd-id="594">
+                                            <div class="item-price mt-1" wfd-id="595">
+                                                <span class="special-price font-weight-bold" wfd-id="596">5.000.000₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" wfd-id="591">
+                                <div class="product-item position-relative product-item-main mb-3" wfd-id="592">
+                                    <a href="/giay-ultraboost-21-black" class="thumb flip effect-ming d-block" title="GIÀY ULTRABOOST 21 - Black">
+                                        <div class="item-image position-relative w-100 m-0 aspect ratio1by1" wfd-id="602">
+                                            <img src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" data-src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" class="d-block image-1 img img-contain position-absolute w-100 h-100 lazy" alt="GIÀY ULTRABOOST 21 - Black">
+                                            <div class="w-100 h-100 overlay" wfd-id="603"></div>
+                                        </div>
+                                    </a>
+                                    <div class="item-info text-left p-2" wfd-id="593">
+                                        <div class="item-title font-weight-bold m-0 line_1 mt-1">
+                                            <a class="d-block name_product" href="/giay-ultraboost-21-black" title="GIÀY ULTRABOOST 21 - Black">GIÀY ULTRABOOST 21 - Black</a>
+                                        </div>
+                                        <div class="item-content" wfd-id="594">
+                                            <div class="item-price mt-1" wfd-id="595">
+                                                <span class="special-price font-weight-bold" wfd-id="596">5.000.000₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" wfd-id="591">
+                                <div class="product-item position-relative product-item-main mb-3" wfd-id="592">
+                                    <a href="/giay-ultraboost-21-black" class="thumb flip effect-ming d-block" title="GIÀY ULTRABOOST 21 - Black">
+                                        <div class="item-image position-relative w-100 m-0 aspect ratio1by1" wfd-id="602">
+                                            <img src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" data-src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" class="d-block image-1 img img-contain position-absolute w-100 h-100 lazy" alt="GIÀY ULTRABOOST 21 - Black">
+                                            <div class="w-100 h-100 overlay" wfd-id="603"></div>
+                                        </div>
+                                    </a>
+                                    <div class="item-info text-left p-2" wfd-id="593">
+                                        <div class="item-title font-weight-bold m-0 line_1 mt-1">
+                                            <a class="d-block name_product" href="/giay-ultraboost-21-black" title="GIÀY ULTRABOOST 21 - Black">GIÀY ULTRABOOST 21 - Black</a>
+                                        </div>
+                                        <div class="item-content" wfd-id="594">
+                                            <div class="item-price mt-1" wfd-id="595">
+                                                <span class="special-price font-weight-bold" wfd-id="596">5.000.000₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-button-prev b1_prev" tabindex="-1" role="button" aria-label="Previous slide" aria-disabled="true" wfd-id="496"></div>
+                        <div class="swiper-button-next b1_next" tabindex="0" role="button" aria-label="Next slide" aria-disabled="false" wfd-id="495"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12" style="margin-bottom:20px">
+                <div class="m_product pt-xl-7 pb-2 pt-5 " wfd-id="492">
+                    <h2 class="title mb-5 text-uppercase font-weight-bold text-center">
+                        <a class="position-relative banner-w modal-open" href="san-pham-noi-bat" title="Sản phẩm nổi bật">Sản phẩm nổi bật</a>
+                    </h2>
+                    <div class="b_product swiper-container" wfd-id="493">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" wfd-id="591">
+                                <div class="product-item position-relative product-item-main mb-3" wfd-id="592">
+                                    <a href="/giay-ultraboost-21-black" class="thumb flip effect-ming d-block" title="GIÀY ULTRABOOST 21 - Black">
+                                        <div class="item-image position-relative w-100 m-0 aspect ratio1by1" wfd-id="602">
+                                            <img src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" data-src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" class="d-block image-1 img img-contain position-absolute w-100 h-100 lazy" alt="GIÀY ULTRABOOST 21 - Black">
+                                            <div class="w-100 h-100 overlay" wfd-id="603"></div>
+                                        </div>
+                                    </a>
+                                    <div class="item-info text-left p-2" wfd-id="593">
+                                        <div class="item-title font-weight-bold m-0 line_1 mt-1">
+                                            <a class="d-block name_product" href="/giay-ultraboost-21-black" title="GIÀY ULTRABOOST 21 - Black">GIÀY ULTRABOOST 21 - Black</a>
+                                        </div>
+                                        <div class="item-content" wfd-id="594">
+                                            <div class="item-price mt-1" wfd-id="595">
+                                                <span class="special-price font-weight-bold" wfd-id="596">5.000.000₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" wfd-id="591">
+                                <div class="product-item position-relative product-item-main mb-3" wfd-id="592">
+                                    <a href="/giay-ultraboost-21-black" class="thumb flip effect-ming d-block" title="GIÀY ULTRABOOST 21 - Black">
+                                        <div class="item-image position-relative w-100 m-0 aspect ratio1by1" wfd-id="602">
+                                            <img src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" data-src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" class="d-block image-1 img img-contain position-absolute w-100 h-100 lazy" alt="GIÀY ULTRABOOST 21 - Black">
+                                            <div class="w-100 h-100 overlay" wfd-id="603"></div>
+                                        </div>
+                                    </a>
+                                    <div class="item-info text-left p-2" wfd-id="593">
+                                        <div class="item-title font-weight-bold m-0 line_1 mt-1">
+                                            <a class="d-block name_product" href="/giay-ultraboost-21-black" title="GIÀY ULTRABOOST 21 - Black">GIÀY ULTRABOOST 21 - Black</a>
+                                        </div>
+                                        <div class="item-content" wfd-id="594">
+                                            <div class="item-price mt-1" wfd-id="595">
+                                                <span class="special-price font-weight-bold" wfd-id="596">5.000.000₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" wfd-id="591">
+                                <div class="product-item position-relative product-item-main mb-3" wfd-id="592">
+                                    <a href="/giay-ultraboost-21-black" class="thumb flip effect-ming d-block" title="GIÀY ULTRABOOST 21 - Black">
+                                        <div class="item-image position-relative w-100 m-0 aspect ratio1by1" wfd-id="602">
+                                            <img src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" data-src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" class="d-block image-1 img img-contain position-absolute w-100 h-100 lazy" alt="GIÀY ULTRABOOST 21 - Black">
+                                            <div class="w-100 h-100 overlay" wfd-id="603"></div>
+                                        </div>
+                                    </a>
+                                    <div class="item-info text-left p-2" wfd-id="593">
+                                        <div class="item-title font-weight-bold m-0 line_1 mt-1">
+                                            <a class="d-block name_product" href="/giay-ultraboost-21-black" title="GIÀY ULTRABOOST 21 - Black">GIÀY ULTRABOOST 21 - Black</a>
+                                        </div>
+                                        <div class="item-content" wfd-id="594">
+                                            <div class="item-price mt-1" wfd-id="595">
+                                                <span class="special-price font-weight-bold" wfd-id="596">5.000.000₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" wfd-id="591">
+                                <div class="product-item position-relative product-item-main mb-3" wfd-id="592">
+                                    <a href="/giay-ultraboost-21-black" class="thumb flip effect-ming d-block" title="GIÀY ULTRABOOST 21 - Black">
+                                        <div class="item-image position-relative w-100 m-0 aspect ratio1by1" wfd-id="602">
+                                            <img src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" data-src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" class="d-block image-1 img img-contain position-absolute w-100 h-100 lazy" alt="GIÀY ULTRABOOST 21 - Black">
+                                            <div class="w-100 h-100 overlay" wfd-id="603"></div>
+                                        </div>
+                                    </a>
+                                    <div class="item-info text-left p-2" wfd-id="593">
+                                        <div class="item-title font-weight-bold m-0 line_1 mt-1">
+                                            <a class="d-block name_product" href="/giay-ultraboost-21-black" title="GIÀY ULTRABOOST 21 - Black">GIÀY ULTRABOOST 21 - Black</a>
+                                        </div>
+                                        <div class="item-content" wfd-id="594">
+                                            <div class="item-price mt-1" wfd-id="595">
+                                                <span class="special-price font-weight-bold" wfd-id="596">5.000.000₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" wfd-id="591">
+                                <div class="product-item position-relative product-item-main mb-3" wfd-id="592">
+                                    <a href="/giay-ultraboost-21-black" class="thumb flip effect-ming d-block" title="GIÀY ULTRABOOST 21 - Black">
+                                        <div class="item-image position-relative w-100 m-0 aspect ratio1by1" wfd-id="602">
+                                            <img src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" data-src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" class="d-block image-1 img img-contain position-absolute w-100 h-100 lazy" alt="GIÀY ULTRABOOST 21 - Black">
+                                            <div class="w-100 h-100 overlay" wfd-id="603"></div>
+                                        </div>
+                                    </a>
+                                    <div class="item-info text-left p-2" wfd-id="593">
+                                        <div class="item-title font-weight-bold m-0 line_1 mt-1">
+                                            <a class="d-block name_product" href="/giay-ultraboost-21-black" title="GIÀY ULTRABOOST 21 - Black">GIÀY ULTRABOOST 21 - Black</a>
+                                        </div>
+                                        <div class="item-content" wfd-id="594">
+                                            <div class="item-price mt-1" wfd-id="595">
+                                                <span class="special-price font-weight-bold" wfd-id="596">5.000.000₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" wfd-id="591">
+                                <div class="product-item position-relative product-item-main mb-3" wfd-id="592">
+                                    <a href="/giay-ultraboost-21-black" class="thumb flip effect-ming d-block" title="GIÀY ULTRABOOST 21 - Black">
+                                        <div class="item-image position-relative w-100 m-0 aspect ratio1by1" wfd-id="602">
+                                            <img src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" data-src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" class="d-block image-1 img img-contain position-absolute w-100 h-100 lazy" alt="GIÀY ULTRABOOST 21 - Black">
+                                            <div class="w-100 h-100 overlay" wfd-id="603"></div>
+                                        </div>
+                                    </a>
+                                    <div class="item-info text-left p-2" wfd-id="593">
+                                        <div class="item-title font-weight-bold m-0 line_1 mt-1">
+                                            <a class="d-block name_product" href="/giay-ultraboost-21-black" title="GIÀY ULTRABOOST 21 - Black">GIÀY ULTRABOOST 21 - Black</a>
+                                        </div>
+                                        <div class="item-content" wfd-id="594">
+                                            <div class="item-price mt-1" wfd-id="595">
+                                                <span class="special-price font-weight-bold" wfd-id="596">5.000.000₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" wfd-id="591">
+                                <div class="product-item position-relative product-item-main mb-3" wfd-id="592">
+                                    <a href="/giay-ultraboost-21-black" class="thumb flip effect-ming d-block" title="GIÀY ULTRABOOST 21 - Black">
+                                        <div class="item-image position-relative w-100 m-0 aspect ratio1by1" wfd-id="602">
+                                            <img src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" data-src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" class="d-block image-1 img img-contain position-absolute w-100 h-100 lazy" alt="GIÀY ULTRABOOST 21 - Black">
+                                            <div class="w-100 h-100 overlay" wfd-id="603"></div>
+                                        </div>
+                                    </a>
+                                    <div class="item-info text-left p-2" wfd-id="593">
+                                        <div class="item-title font-weight-bold m-0 line_1 mt-1">
+                                            <a class="d-block name_product" href="/giay-ultraboost-21-black" title="GIÀY ULTRABOOST 21 - Black">GIÀY ULTRABOOST 21 - Black</a>
+                                        </div>
+                                        <div class="item-content" wfd-id="594">
+                                            <div class="item-price mt-1" wfd-id="595">
+                                                <span class="special-price font-weight-bold" wfd-id="596">5.000.000₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" wfd-id="591">
+                                <div class="product-item position-relative product-item-main mb-3" wfd-id="592">
+                                    <a href="/giay-ultraboost-21-black" class="thumb flip effect-ming d-block" title="GIÀY ULTRABOOST 21 - Black">
+                                        <div class="item-image position-relative w-100 m-0 aspect ratio1by1" wfd-id="602">
+                                            <img src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" data-src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" class="d-block image-1 img img-contain position-absolute w-100 h-100 lazy" alt="GIÀY ULTRABOOST 21 - Black">
+                                            <div class="w-100 h-100 overlay" wfd-id="603"></div>
+                                        </div>
+                                    </a>
+                                    <div class="item-info text-left p-2" wfd-id="593">
+                                        <div class="item-title font-weight-bold m-0 line_1 mt-1">
+                                            <a class="d-block name_product" href="/giay-ultraboost-21-black" title="GIÀY ULTRABOOST 21 - Black">GIÀY ULTRABOOST 21 - Black</a>
+                                        </div>
+                                        <div class="item-content" wfd-id="594">
+                                            <div class="item-price mt-1" wfd-id="595">
+                                                <span class="special-price font-weight-bold" wfd-id="596">5.000.000₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" wfd-id="591">
+                                <div class="product-item position-relative product-item-main mb-3" wfd-id="592">
+                                    <a href="/giay-ultraboost-21-black" class="thumb flip effect-ming d-block" title="GIÀY ULTRABOOST 21 - Black">
+                                        <div class="item-image position-relative w-100 m-0 aspect ratio1by1" wfd-id="602">
+                                            <img src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" data-src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" class="d-block image-1 img img-contain position-absolute w-100 h-100 lazy" alt="GIÀY ULTRABOOST 21 - Black">
+                                            <div class="w-100 h-100 overlay" wfd-id="603"></div>
+                                        </div>
+                                    </a>
+                                    <div class="item-info text-left p-2" wfd-id="593">
+                                        <div class="item-title font-weight-bold m-0 line_1 mt-1">
+                                            <a class="d-block name_product" href="/giay-ultraboost-21-black" title="GIÀY ULTRABOOST 21 - Black">GIÀY ULTRABOOST 21 - Black</a>
+                                        </div>
+                                        <div class="item-content" wfd-id="594">
+                                            <div class="item-price mt-1" wfd-id="595">
+                                                <span class="special-price font-weight-bold" wfd-id="596">5.000.000₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" wfd-id="591">
+                                <div class="product-item position-relative product-item-main mb-3" wfd-id="592">
+                                    <a href="/giay-ultraboost-21-black" class="thumb flip effect-ming d-block" title="GIÀY ULTRABOOST 21 - Black">
+                                        <div class="item-image position-relative w-100 m-0 aspect ratio1by1" wfd-id="602">
+                                            <img src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" data-src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" class="d-block image-1 img img-contain position-absolute w-100 h-100 lazy" alt="GIÀY ULTRABOOST 21 - Black">
+                                            <div class="w-100 h-100 overlay" wfd-id="603"></div>
+                                        </div>
+                                    </a>
+                                    <div class="item-info text-left p-2" wfd-id="593">
+                                        <div class="item-title font-weight-bold m-0 line_1 mt-1">
+                                            <a class="d-block name_product" href="/giay-ultraboost-21-black" title="GIÀY ULTRABOOST 21 - Black">GIÀY ULTRABOOST 21 - Black</a>
+                                        </div>
+                                        <div class="item-content" wfd-id="594">
+                                            <div class="item-price mt-1" wfd-id="595">
+                                                <span class="special-price font-weight-bold" wfd-id="596">5.000.000₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" wfd-id="591">
+                                <div class="product-item position-relative product-item-main mb-3" wfd-id="592">
+                                    <a href="/giay-ultraboost-21-black" class="thumb flip effect-ming d-block" title="GIÀY ULTRABOOST 21 - Black">
+                                        <div class="item-image position-relative w-100 m-0 aspect ratio1by1" wfd-id="602">
+                                            <img src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" data-src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" class="d-block image-1 img img-contain position-absolute w-100 h-100 lazy" alt="GIÀY ULTRABOOST 21 - Black">
+                                            <div class="w-100 h-100 overlay" wfd-id="603"></div>
+                                        </div>
+                                    </a>
+                                    <div class="item-info text-left p-2" wfd-id="593">
+                                        <div class="item-title font-weight-bold m-0 line_1 mt-1">
+                                            <a class="d-block name_product" href="/giay-ultraboost-21-black" title="GIÀY ULTRABOOST 21 - Black">GIÀY ULTRABOOST 21 - Black</a>
+                                        </div>
+                                        <div class="item-content" wfd-id="594">
+                                            <div class="item-price mt-1" wfd-id="595">
+                                                <span class="special-price font-weight-bold" wfd-id="596">5.000.000₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" wfd-id="591">
+                                <div class="product-item position-relative product-item-main mb-3" wfd-id="592">
+                                    <a href="/giay-ultraboost-21-black" class="thumb flip effect-ming d-block" title="GIÀY ULTRABOOST 21 - Black">
+                                        <div class="item-image position-relative w-100 m-0 aspect ratio1by1" wfd-id="602">
+                                            <img src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" data-src="//bizweb.dktcdn.net/thumb/large/100/415/502/products/1-1.jpg?v=1614679115827" class="d-block image-1 img img-contain position-absolute w-100 h-100 lazy" alt="GIÀY ULTRABOOST 21 - Black">
+                                            <div class="w-100 h-100 overlay" wfd-id="603"></div>
+                                        </div>
+                                    </a>
+                                    <div class="item-info text-left p-2" wfd-id="593">
+                                        <div class="item-title font-weight-bold m-0 line_1 mt-1">
+                                            <a class="d-block name_product" href="/giay-ultraboost-21-black" title="GIÀY ULTRABOOST 21 - Black">GIÀY ULTRABOOST 21 - Black</a>
+                                        </div>
+                                        <div class="item-content" wfd-id="594">
+                                            <div class="item-price mt-1" wfd-id="595">
+                                                <span class="special-price font-weight-bold" wfd-id="596">5.000.000₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-button-prev b1_prev" tabindex="-1" role="button" aria-label="Previous slide" aria-disabled="true" wfd-id="496"></div>
+                        <div class="swiper-button-next b1_next" tabindex="0" role="button" aria-label="Next slide" aria-disabled="false" wfd-id="495"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            var b_product = new Swiper('.b_product', {
+                spaceBetween: 10,
+                loop: false,
+                speed: 1000,
+                navigation: {
+                    nextEl: '.b1_next',
+                    prevEl: '.b1_prev',
+                },
+                autoplay: false,
+                breakpoints: {
+                    576: {
+                        slidesPerView: 2
+                    },
+                    768: {
+                        slidesPerView: 3
+                    },
+                    992: {
+                        slidesPerView: 3
+                    },
+                    1200: {
+                        slidesPerView: 5
+                    }
+                }
+            });
+        });
+    </script>
 </div>
 <div class="section_about">
     <div class="container">
@@ -80,7 +851,7 @@
             </div>
             <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
                 <div class="module_right a-center">
-                    <img class="lazyload loaded" src="//bizweb.dktcdn.net/100/346/521/themes/818256/assets/bg_about.png?1619594503248" data-src="//bizweb.dktcdn.net/100/346/521/themes/818256/assets/bg_about.png?1619594503248" alt="Coffee House" data-was-processed="true">
+                    <img class="lazyload loaded" src="<?= base_url("assets/images/bg_about.png") ?>" data-src="//bizweb.dktcdn.net/100/346/521/themes/818256/assets/bg_about.png?1619594503248" alt="Coffee House" data-was-processed="true">
                 </div>
             </div>
         </div>
@@ -2710,72 +3481,6 @@
         </div>
     </div>
 </section>
-<div id="hinhanh" class="st section_gallery">
-    <div class="container">
-        <div class="row">
-            <div class="heading">
-                <h2>Hình ảnh quán cafe</h2>
-            </div>
-            <div class="gallery_content">
-                <div class="blog-list blog-image-list">
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                        <div class="al-item">
-                            <img class="lazyload loaded" src="//bizweb.dktcdn.net/thumb/grande/100/346/521/themes/818256/assets/gallery_big.jpg?1619594503248" data-src="//bizweb.dktcdn.net/thumb/grande/100/346/521/themes/818256/assets/gallery_big.jpg?1619594503248" alt="Coffee House" data-was-processed="true">
-                            <a href="//bizweb.dktcdn.net/100/346/521/themes/818256/assets/gallery_big.jpg?1619594503248" data-toggle="lightbox" data-gallery="example-gallery">
-                                <i class="fa fa-search-plus"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 content_right">
-                        <div class="row">
-
-
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 margin-bottom-30 item">
-                                <div class="al-item al-item-min">
-                                    <img class="lazyload loaded" src="//bizweb.dktcdn.net/thumb/large/100/346/521/themes/818256/assets/gallery_1.jpg?1619594503248" data-src="//bizweb.dktcdn.net/thumb/large/100/346/521/themes/818256/assets/gallery_1.jpg?1619594503248" alt="Coffee House" data-was-processed="true">
-                                    <a href="//bizweb.dktcdn.net/100/346/521/themes/818256/assets/gallery_1.jpg?1619594503248" data-toggle="lightbox" data-gallery="example-gallery">
-                                        <i class="fa fa-search-plus"></i>
-                                    </a>
-                                </div>
-                            </div>
-
-
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 margin-bottom-30 item">
-                                <div class="al-item al-item-min">
-                                    <img class="lazyload loaded" src="//bizweb.dktcdn.net/thumb/large/100/346/521/themes/818256/assets/gallery_2.jpg?1619594503248" data-src="//bizweb.dktcdn.net/thumb/large/100/346/521/themes/818256/assets/gallery_2.jpg?1619594503248" alt="Coffee House" data-was-processed="true">
-                                    <a href="//bizweb.dktcdn.net/100/346/521/themes/818256/assets/gallery_2.jpg?1619594503248" data-toggle="lightbox" data-gallery="example-gallery">
-                                        <i class="fa fa-search-plus"></i>
-                                    </a>
-                                </div>
-                            </div>
-
-
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 margin-bottom-30 item">
-                                <div class="al-item al-item-min">
-                                    <img class="lazyload loaded" src="//bizweb.dktcdn.net/thumb/large/100/346/521/themes/818256/assets/gallery_3.jpg?1619594503248" data-src="//bizweb.dktcdn.net/thumb/large/100/346/521/themes/818256/assets/gallery_3.jpg?1619594503248" alt="Coffee House" data-was-processed="true">
-                                    <a href="//bizweb.dktcdn.net/100/346/521/themes/818256/assets/gallery_3.jpg?1619594503248" data-toggle="lightbox" data-gallery="example-gallery">
-                                        <i class="fa fa-search-plus"></i>
-                                    </a>
-                                </div>
-                            </div>
-
-
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 margin-bottom-30 item">
-                                <div class="al-item al-item-min">
-                                    <img class="lazyload loaded" src="//bizweb.dktcdn.net/thumb/large/100/346/521/themes/818256/assets/gallery_4.jpg?1619594503248" data-src="//bizweb.dktcdn.net/thumb/large/100/346/521/themes/818256/assets/gallery_4.jpg?1619594503248" alt="Coffee House" data-was-processed="true">
-                                    <a href="//bizweb.dktcdn.net/100/346/521/themes/818256/assets/gallery_4.jpg?1619594503248" data-toggle="lightbox" data-gallery="example-gallery">
-                                        <i class="fa fa-search-plus"></i>
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 <section class="section_feedback">
     <div class="container">
         <div class="row">
@@ -2973,37 +3678,30 @@
             </div>
         </div>
     </div>
+    <script>
+        var galleryThumbs = new Swiper('.gallery-thumbs', {
+            spaceBetween: 30,
+            slidesPerView: 5,
+            loop: false,
+            freeMode: true,
+            loopedSlides: 5, //looped slides should be the same
+            watchSlidesVisibility: true,
+            watchSlidesProgress: true,
+        });
+        var galleryTop = new Swiper('.gallery-top', {
+            spaceBetween: 0,
+            loop: false,
+            loopedSlides: 5, //looped slides should be the same
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            thumbs: {
+                swiper: galleryThumbs,
+            },
+        });
+    </script>
 </section>
-<div class="section_hours_book form_contact_footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-5 col-xs-12 content_left">
-                <div class="heading a-center">
-                    <h2>Giờ mở cửa</h2>
-                </div>
-                <div class="content_hour">
-                    <p class="option_1">Thứ 2 - Thứ 6 hàng tuần</p>
-                    <span>7am - 11am</span>
-                    <span>11am - 10pm</span>
-                    <p class="option_2">Thứ 7, Chủ nhật hàng tuần</p>
-                    <span>8am - 1 am</span>
-                    <span>11am - 9pm</span>
-                </div>
-                <div class="hotline_hour">
-                    <div class="sdt">Số điện thoại</div>
-
-                    <a href="tel:18006750">18006750</a>
-
-                </div>
-            </div>
-            <div class="col-lg-8 col-md-8 col-sm-7 col-xs-12 to_animate text-center animated fadeInUp">
-                <div class="banner-hours-book">
-                    <a href="/dat-ban" title="Đặt bàn ngay">Đặt bàn ngay</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 <div class="section_blog">
     <div class="container">
         <div class="row">
@@ -3082,6 +3780,49 @@
             </div>
         </div>
     </div>
+    <script>
+        var swiper = new Swiper('.wrap_owl_blog', {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            grabCursor: false,
+            navigation: {
+                nextEl: '.wrap_owl_blog .swiper-button-next',
+                prevEl: '.wrap_owl_blog .swiper-button-prev',
+            },
+            breakpoints: {
+                1199: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                    touchRatio: 1,
+                    loop: false,
+                },
+                991: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                    touchRatio: 1,
+                    loop: false,
+                },
+                767: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                    touchRatio: 1,
+                    loop: false,
+                },
+                480: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                    touchRatio: 1,
+                    loop: false,
+                },
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                    touchRatio: 1,
+                    loop: false,
+                }
+            }
+        });
+    </script>
 </div>
 <?= $this->endSection() ?>
 

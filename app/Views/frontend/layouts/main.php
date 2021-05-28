@@ -22,6 +22,7 @@
     <meta name="author" content="daotran">
     <meta name="copyright" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="preload" as="style" type="text/css" href="<?= base_url("assets/css") ?>/plugin.scss.css">
     <link rel="preload" as="style" type="text/css" href="<?= base_url("assets/css") ?>/base.scss.css">
     <link rel="preload" as="style" type="text/css" href="<?= base_url("assets/css") ?>/style.scss.css">
@@ -33,6 +34,17 @@
     <link href="<?= base_url("assets/css") ?>/style.scss.css" rel="stylesheet" type="text/css">
     <link href="<?= base_url("assets/css") ?>/module.scss.css" rel="stylesheet" type="text/css">
     <link href="<?= base_url("assets/css") ?>/responsive.scss.css" rel="stylesheet" type="text/css">
+
+    <style type="text/css">
+        .swiper-container {
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+    </style>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- CSS -->
     <?= $this->renderSection('style') ?>
 
@@ -47,12 +59,14 @@
     <div class="site-wrapper">
 
         <?= $this->include('frontend/layouts/_header') ?>
-        <div class="site-content">
-            <?= $this->renderSection("content"); ?>
-        </div>
+        
+        <?= $this->renderSection("content"); ?>
+
         <!-- Site Header -->
         <?= $this->include('frontend/layouts/_footer') ?>
 
+
+        <?= $this->renderSection('script') ?>
     </div>
 </body>
 
