@@ -176,6 +176,8 @@ $lang['product_category'] = "";
 $lang['news_category'] = "";
 $lang['setting'] = "";
 $lang['page'] = "";
+$lang['sales'] = "";
+$lang['contact'] = "";
 return $lang;
 
 

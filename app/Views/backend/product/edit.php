@@ -54,31 +54,21 @@
                                         </div>
                                     </div>
                                     <div class="form-group row">
+                                        <b class="col-12 col-lg-2 col-form-label">Thông tin:<i class="text-danger">*</i></b>
+                                        <div class="col-12">
+                                            <textarea class="edit" name="element_vi"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
                                         <b class="col-12 col-lg-2 col-form-label">Mô tả:<i class="text-danger">*</i></b>
                                         <div class="col-12">
                                             <textarea class="edit" name="description_vi"></textarea>
                                         </div>
                                     </div>
-                                    <div class="form-group row">
-                                        <b class="col-12 col-lg-2 col-form-label">Thành phần:<i class="text-danger">*</i></b>
-                                        <div class="col-12">
-                                            <textarea class="edit" name="element_vi"></textarea>
-                                        </div>
-                                    </div>
 
-                                    <div class="form-group row">
-                                        <b class="col-12 col-lg-2 col-form-label">Công dụng:<i class="text-danger">*</i></b>
-                                        <div class="col-12">
-                                            <textarea class="edit" name="uses_vi"></textarea>
-                                        </div>
-                                    </div>
 
-                                    <div class="form-group row">
-                                        <b class="col-12 col-lg-2 col-form-label">Hướng dẫn sử dụng:<i class="text-danger">*</i></b>
-                                        <div class="col-12">
-                                            <textarea class="edit" name="guide_vi"></textarea>
-                                        </div>
-                                    </div>
+
+
                                 </div>
                                 <div id="menu1" class=" tab-pane fade">
                                     <div class="form-group row">
@@ -88,31 +78,19 @@
                                         </div>
                                     </div>
                                     <div class="form-group row">
+                                        <b class="col-12 col-lg-2 col-form-label">Thông tin:<i class="text-danger">*</i></b>
+                                        <div class="col-12">
+                                            <textarea class="edit" name="element_en"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
                                         <b class="col-12 col-lg-2 col-form-label">Mô tả:<i class="text-danger">*</i></b>
                                         <div class="col-12">
                                             <textarea class="edit" name="description_en"></textarea>
                                         </div>
                                     </div>
-                                    <div class="form-group row">
-                                        <b class="col-12 col-lg-2 col-form-label">Thành phần:<i class="text-danger">*</i></b>
-                                        <div class="col-12">
-                                            <textarea class="edit" name="element_en"></textarea>
-                                        </div>
-                                    </div>
 
-                                    <div class="form-group row">
-                                        <b class="col-12 col-lg-2 col-form-label">Công dụng:<i class="text-danger">*</i></b>
-                                        <div class="col-12">
-                                            <textarea class="edit" name="uses_en"></textarea>
-                                        </div>
-                                    </div>
 
-                                    <div class="form-group row">
-                                        <b class="col-12 col-lg-2 col-form-label">Hướng dẫn sử dụng:<i class="text-danger">*</i></b>
-                                        <div class="col-12">
-                                            <textarea class="edit" name="guide_en"></textarea>
-                                        </div>
-                                    </div>
                                 </div>
                                 <div id="menu2" class=" tab-pane fade">
                                     <div class="form-group row">
@@ -122,29 +100,15 @@
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <b class="col-12 col-lg-2 col-form-label">Mô tả:<i class="text-danger">*</i></b>
-                                        <div class="col-12">
-                                            <textarea class="edit" name="description_jp"></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <b class="col-12 col-lg-2 col-form-label">Thành phần:<i class="text-danger">*</i></b>
+                                        <b class="col-12 col-lg-2 col-form-label">Thông tin:<i class="text-danger">*</i></b>
                                         <div class="col-12">
                                             <textarea class="edit" name="element_jp"></textarea>
                                         </div>
                                     </div>
-
                                     <div class="form-group row">
-                                        <b class="col-12 col-lg-2 col-form-label">Công dụng:<i class="text-danger">*</i></b>
+                                        <b class="col-12 col-lg-2 col-form-label">Mô tả:<i class="text-danger">*</i></b>
                                         <div class="col-12">
-                                            <textarea class="edit" name="uses_jp"></textarea>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group row">
-                                        <b class="col-12 col-lg-2 col-form-label">Hướng dẫn sử dụng:<i class="text-danger">*</i></b>
-                                        <div class="col-12">
-                                            <textarea class="edit" name="guide_jp"></textarea>
+                                            <textarea class="edit" name="description_jp"></textarea>
                                         </div>
                                     </div>
                                 </div>
@@ -196,6 +160,25 @@
                                         </div>
                                         <div class="card-body">
                                             <?php foreach ($category as $row) : ?>
+                                                <div class="col-12">
+                                                    <div class="custom-checkbox custom-control">
+                                                        <input name="category_list[]" type="checkbox" id="eCheckbox<?= $row->id ?>" class="custom-control-input" value="<?= $row->id ?>">
+                                                        <label class="custom-control-label" for="eCheckbox<?= $row->id ?>"><?= $row->name_vi ?></label>
+                                                    </div>
+                                                </div>
+                                            <?php endforeach ?>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-12 pt-1">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            Menu
+                                        </div>
+                                        <div class="card-body">
+                                            <?php foreach ($menu as $row) : ?>
                                                 <div class="col-12">
                                                     <div class="custom-checkbox custom-control">
                                                         <input name="category_list[]" type="checkbox" id="eCheckbox<?= $row->id ?>" class="custom-control-input" value="<?= $row->id ?>">

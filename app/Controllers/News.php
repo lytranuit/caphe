@@ -32,16 +32,18 @@ class News extends BaseController
         $news_model->relation($this->data['info'], array("image", 'tags'));
         $this->data['title'] =   $this->data['info']->{pick_language($this->data['info'], "title_")} . $this->data['title'];
 
-        $tags = array_map(function ($item) {
-            return $item->tag_id;
-        }, $this->data['info']->tags);
-        //echo "<pre>";
-        //print_r($categories);
-        //die();
-        $this->data['news'] = $news_model->get_news_related($id, $tags);
-        //echo "<pre>";
-        //print_r($this->data['news']);
-        //die();
+        // $tags = array_map(function ($item) {
+        //     return $item->tag_id;
+        // }, $this->data['info']->tags);
+        // //echo "<pre>";
+        // //print_r($categories);
+        // //die();
+        // $this->data['news'] = $news_model->get_news_related($id, $tags);
+
+        $this->data['news'] = $news_model->where("id <>", $id)->orderby("id", "DESC")->limit(10)->findAll();
+        // echo "<pre>";
+        // print_r($this->data['news']);
+        // die();
         return view($this->data['content'], $this->data);
     }
 }

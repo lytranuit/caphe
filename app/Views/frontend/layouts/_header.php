@@ -7,17 +7,14 @@
     <div class="content_memu_mb hidden-lg hidden-md">
         <div class="link_list_mobile">
             <ul class="ct-mobile">
-
                 <li class="level0 level-top parent level_ico">
                     <a class="a_level0" href="/">Trang chủ</a>
 
                 </li>
-
                 <li class="level0 level-top parent level_ico">
                     <a class="a_level0" href="/gioi-thieu">Giới thiệu</a>
 
                 </li>
-
                 <li class="level0 level-top parent level_ico">
                     <a class="a_level0" href="/collections/all">Sản phẩm</a>
 
@@ -60,15 +57,7 @@
 
                 <li class="level0 level-top parent level_ico">
                     <a class="a_level0" href="/lien-he">Liên hệ</a>
-
                 </li>
-
-            </ul>
-            <ul class="ct-mobile login_mobile hidden-sm hidden-md hidden-lg">
-
-                <li class="level0 level-top parent level_ico"><a href="/account/login" title="Đăng nhập"><i class="fas fa-user"></i>Đăng nhập</a></li>
-                <li class="level0 level-top parent level_ico"><a href="/account/register" title="Đăng ký"><i class="fas fa-user-plus"></i>Đăng ký</a></li>
-
             </ul>
         </div>
     </div>
@@ -107,49 +96,17 @@
                             <div class="container">
                                 <div class="row row-noGutter">
                                     <nav class="header-nav">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                                         <ul class="item_big nav-left hidden-xs hidden-sm">
-
-
-
                                             <li class="nav-item ">
                                                 <a class="a-img" href="/">
                                                     <span>Trang chủ</span>
                                                 </a>
                                             </li>
-
-
-
-
                                             <li class="nav-item ">
                                                 <a class="a-img" href="/gioi-thieu">
                                                     <span>Giới thiệu</span>
                                                 </a>
                                             </li>
-
-
-
-
-
                                             <li class="nav-item ">
                                                 <a class="a-img" href="/collections/all">
                                                     <span>Sản phẩm</span><i class="fa fa-caret-down"></i>
@@ -178,9 +135,6 @@
 
                                                 </ul>
                                             </li>
-
-
-
                                         </ul>
                                         <ul class="logo_center">
                                             <li class="logo">

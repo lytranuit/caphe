@@ -86,7 +86,7 @@ class Category extends BaseController
         //echo "<pre>";
         //print_r($posts);
         //die();
-        
+
         $posts = $Category_model->image($posts);
         $data = array();
         if (!empty($posts)) {
@@ -97,7 +97,7 @@ class Category extends BaseController
                 $image = isset($post->image->src) ? base_url($post->image->src) : "";
                 $nestedData['image'] = "<img src='$image' width='100'/>";
                 // $image = isset($post->image->src) ? base_url() . $post->image->src : "";
-                // $nestedData['image'] = "<img src='$image' width='100'/>";
+                $nestedData['is_menu'] = $post->is_menu ? '<i class="fas fa-check text-success"></i>' : '<i class="fas fa-times text-danger"></i>';
                 $nestedData['date'] =  date("d/m/Y", strtotime($post->date));
                 $nestedData['action'] = '<a href="' . base_url("admin/category/edit/" . $post->id) . '" class="btn btn-warning btn-sm mr-2" title="edit">'
                     . '<i class="fas fa-pencil-alt">'

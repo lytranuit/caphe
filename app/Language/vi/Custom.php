@@ -24,11 +24,11 @@ $lang['header_quick_order'] = "";
 $lang['details_mo_ta'] = "Mô tả";
 $lang['details_huong_dan'] = "Hướng dẫn sử dụng";
 $lang['details_sp_lien_quan'] = "Sản phẩm liên quan";
-$lang['danh_muc'] = "Danh mục sản phẩm";
+$lang['danh_muc'] = "Danh mục";
 $lang['topic'] = "Chủ đề";
 $lang['post'] = "Bài viết";
 $lang['khuyen_mai'] = "SIÊU KHUYẾN MẠI";
-$lang['index_menu_slide'] = "Danh mục sản phẩm";
+$lang['index_menu_slide'] = "Danh mục";
 $lang['result_search'] = "Kết quả tìm kiếm";
 $lang['qui_cach'] = "Qui cách";
 $lang['xuat_xu'] = "Xuất xứ";
@@ -172,10 +172,12 @@ $lang['general'] = "Cài đặt chung";
 $lang['account'] = "Tài khoản";
 $lang['menu'] = "Menu";
 $lang['product'] = "Sản phẩm";
-$lang['product_category'] = "Danh mục sản phẩm";
-$lang['news_category'] = "Danh mục tin tức";
+$lang['product_category'] = "Danh mục";
+$lang['news_category'] = "Danh mục";
 $lang['setting'] = "Cài đặt";
 $lang['page'] = "Trang";
+$lang['sales'] = "Đơn hàng";
+$lang['contact'] = "Liên hệ";
 return $lang;
 
 

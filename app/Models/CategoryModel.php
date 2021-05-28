@@ -12,7 +12,7 @@ class CategoryModel extends Model
     protected $returnType     = 'App\Entities\Category';
     protected $useSoftDeletes = true;
 
-    protected $allowedFields = ['slug', 'name_vi', 'name_en', 'name_jp', 'description_vi', 'description_en', 'description_jp', 'content_vi', 'content_en', 'content_jp', 'date', 'user_id', 'image_id'];
+    protected $allowedFields = ['slug', 'is_menu', 'name_vi', 'name_en', 'name_jp', 'description_vi', 'description_en', 'description_jp', 'content_vi', 'content_en', 'content_jp', 'date', 'user_id', 'image_id'];
 
 
 

@@ -22,6 +22,18 @@
                                     <input class="form-control form-control-sm" type="text" name="slug">
                                 </div>
                             </div>
+                            <div class="form-group row">
+                                <b class="col-12 col-lg-2 col-form-label">Is Menu:</b>
+                                <div class="col-12 col-lg-10 pt-1">
+                                    <div class="switch-button switch-button-success">
+                                        <input type="hidden" name="is_menu" value="0" class="input-tmp">
+                                        <input type="checkbox" checked="" name="is_menu" id="switch19" value="1">
+                                        <span>
+                                            <label for="switch19"></label>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
                             <ul class="nav nav-tabs">
                                 <li class="nav-item">
                                     <a class="nav-link active" data-toggle="tab" href="#menu0">Tiếng Việt</a>

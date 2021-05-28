@@ -19,6 +19,7 @@
                             <th>Hình ảnh</th>
                             <th>Tên</th>
                             <th>Mô tả</th>
+                            <th>Is Menu</th>
                             <th>Hành động</th>
                         </tr>
                     </thead>
@@ -62,6 +63,8 @@
                     "data": "name_vi"
                 }, {
                     "data": "description_vi"
+                }, {
+                    "data": "is_menu"
                 },
                 {
                     "data": "action"

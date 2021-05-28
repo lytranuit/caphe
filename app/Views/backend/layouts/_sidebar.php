@@ -82,18 +82,6 @@
                     </a>
                 </li>
                 <li>
-                    <a href="<?= base_url("admin/slider") ?>">
-                        <i class="metismenu-icon"></i>
-                        <?= lang("Custom.slider") ?>
-                    </a>
-                </li>
-                <li>
-                    <a href="<?= base_url("admin/menu") ?>">
-                        <i class="metismenu-icon"></i>
-                        <?= lang("Custom.menu") ?>
-                    </a>
-                </li>
-                <li>
                     <a href="<?= base_url("admin/user") ?>">
                         <i class="metismenu-icon"></i>
                         <?= lang("Custom.account") ?>

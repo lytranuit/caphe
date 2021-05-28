@@ -1,5 +1,5 @@
 <footer class="footer">
-    <div class="top-footer top_footer" >
+    <div class="top-footer top_footer">
         <div class="section_service_end">
             <div class="container">
                 <div class="row row-noGutter">
@@ -30,7 +30,7 @@
                                             <img alt="Coffee chất lượng hàng <br> đầu của Châu Âu" class="lazyload loaded" src="//bizweb.dktcdn.net/100/346/521/themes/818256/assets/service_2.png?1619594503248" data-src="//bizweb.dktcdn.net/100/346/521/themes/818256/assets/service_2.png?1619594503248" data-was-processed="true">
                                         </span>
                                         <div class="content_srv">
-                                            <span class="title_service">Coffee chất lượng hàng <br> đầu của Châu Âu</span>
+                                            <span class="title_service">Giao hàng - Vận chuyển <br> Đảm bảo, nhanh chóng</span>
                                         </div>
                                     </div>
                                 </div>
@@ -45,7 +45,8 @@
                                             <img alt="Coffee chất lượng hàng <br> đầu của Châu Âu" class="lazyload loaded" src="//bizweb.dktcdn.net/100/346/521/themes/818256/assets/service_3.png?1619594503248" data-src="//bizweb.dktcdn.net/100/346/521/themes/818256/assets/service_3.png?1619594503248" data-was-processed="true">
                                         </span>
                                         <div class="content_srv">
-                                            <span class="title_service">Coffee chất lượng hàng <br> đầu của Châu Âu</span>
+                                            <span class="title_service">ĐỘI NGŨ CHUYÊN NGHIỆP
+                                                <br>Tư vấn – Chăm sóc 24/7</span>
                                         </div>
                                     </div>
                                 </div>
@@ -164,17 +165,14 @@
                             <div class="collapse time_work" id="collapseListMenu02">
                                 <ul class="list-menu">
 
-                                    <li class="li_menu"><a href="/">Trang chủ</a></li>
 
-                                    <li class="li_menu"><a href="/gioi-thieu">Giới thiệu</a></li>
+                                    <li class="li_menu"><a href="<?= url_page(4) ?>">Hướng dẫn mua hàng</a></li>
 
-                                    <li class="li_menu"><a href="/collections/all">Sản phẩm</a></li>
+                                    <li class="li_menu"><a href="<?= url_page(4) ?>">Sản phẩm</a></li>
 
-                                    <li class="li_menu"><a href="/tin-tuc">Dịch vụ</a></li>
+                                    <li class="li_menu"><a href="<?= url_page(4) ?>">Menu</a></li>
 
-                                    <li class="li_menu"><a href="/tin-tuc">Tin tức</a></li>
-
-                                    <li class="li_menu"><a href="/lien-he">Liên hệ</a></li>
+                                    <li class="li_menu"><a href="<?= url_page(4) ?>">Liên hệ</a></li>
 
                                 </ul>
                             </div>
@@ -199,9 +197,8 @@
                 <div class="inner">
                     <div id="copyright" class="fot_copyright a-left">
 
-                        <span class="wsp">@2019 - Bản quyền thuộc về <b>Cafein Team</b><span class="hidden-xs"> | </span><span class="mobile">Cung cấp bởi
-                                <a href="javascript:;">Sapo</a>
-                            </span></span>
+                        <span class="wsp">@2021 - Bản quyền thuộc về <b>Huy Tùng Coffee</b>
+                        </span>
 
                     </div>
 

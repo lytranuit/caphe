@@ -16,6 +16,7 @@
                     <thead>
                         <tr>
                             <th>ID</th>
+                            <th>Hình ảnh</th>
                             <th>Mã</th>
                             <th>Tên</th>
                             <th>Ngày đăng</th>
@@ -57,8 +58,10 @@
             "columns": [{
                     "data": "id"
                 }, {
-                    "data": "code"
+                    "data": "image"
                 }, {
+                    "data": "code"
+                },{
                     "data": "name_vi"
                 },
                 {
