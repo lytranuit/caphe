@@ -33,7 +33,7 @@
                                                     </h3>
                                                 </div>
                                                 <div class="summary_item_blog">
-                                                    <p> <?= split_string($row->{pick_language($row, 'content_')}, 50) ?></p>
+                                                    <?= split_string($row->{pick_language($row, 'content_')}, 50) ?>
                                                 </div>
                                             </div>
                                         </div>

@@ -56,7 +56,7 @@
             </div>
             <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
                 <div class="module_right a-center">
-                    <img class="lazyload loaded" src="<?= base_url("assets/images/bg_about.png") ?>" data-src="//bizweb.dktcdn.net/100/346/521/themes/818256/assets/bg_about.png?1619594503248" alt="Coffee House" data-was-processed="true">
+                    <img class="lazyload loaded" src="<?= base_url("assets/images/bg_about.png") ?>" data-src="<?= base_url("assets/images/bg_about.png") ?>" alt="Coffee House" data-was-processed="true">
                 </div>
             </div>
         </div>

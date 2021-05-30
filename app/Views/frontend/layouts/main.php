@@ -22,7 +22,7 @@
     <meta name="author" content="daotran">
     <meta name="copyright" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="<?= base_url("assets/css") ?>/all.css" />
     <link rel="preload" as="style" type="text/css" href="<?= base_url("assets/css") ?>/plugin.scss.css">
     <link rel="preload" as="style" type="text/css" href="<?= base_url("assets/css") ?>/base.scss.css">
     <link rel="preload" as="style" type="text/css" href="<?= base_url("assets/css") ?>/style.scss.css">
@@ -50,7 +50,7 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- CSS -->
     <?= $this->renderSection('style') ?>
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,600,700%7CDancing+Script:400,500,700%7COswald:400,500,600,700" media="all">
     <script>
         var path = '<?= base_url() ?>/';
     </script>

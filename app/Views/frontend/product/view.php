@@ -278,7 +278,6 @@
 
 <?= $this->section("style") ?>
 
-<link rel="stylesheet" href="<?= base_url("assets/lib/ckeditor/contents.css") ?> " ?>
 <?= $this->endSection() ?>
 <?= $this->section("script") ?>
 <script>
