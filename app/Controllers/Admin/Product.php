@@ -162,6 +162,15 @@ class Product extends BaseController
         header('Location: ' . $_SERVER['HTTP_REFERER']);
         exit;
     }
+    public function up($id)
+    { /////// trang ca nhan
+        $Product_model = model("ProductModel");
+        $data['date'] = date("Y-m-d H:i:s");
+        $obj = $Product_model->create_object($data);
+        $Product_model->update($id, $obj);
+        header('Location: ' . $_SERVER['HTTP_REFERER']);
+        exit;
+    }
 
     public function table()
     {
@@ -178,7 +187,7 @@ class Product extends BaseController
         $totalFiltered = $totalData;
 
         $where = $Product_model;
-        $posts = $where->asObject()->orderby("id", "DESC")->paginate($limit, '', $page);
+        $posts = $where->asObject()->orderby("date", "DESC")->paginate($limit, '', $page);
         //echo "<pre>";
         //print_r($posts);
         //die();
@@ -191,10 +200,14 @@ class Product extends BaseController
                 $nestedData['code'] = $post->code;
                 $image = isset($post->image->src) ? base_url($post->image->src) : "";
                 $nestedData['image'] = "<img src='$image' width='100'/>";
+                $nestedData['price'] =  number_format($post->price, 0, ",", ".") . "đ";
                 // $image = isset($post->image->src) ? base_url() . $post->image->src : "";
                 // $nestedData['image'] = "<img src='$image' width='100'/>";
                 $nestedData['date'] =  date("d/m/Y", strtotime($post->date));
-                $nestedData['action'] = '<a href="' . base_url("admin/product/edit/" . $post->id) . '" class="btn btn-warning btn-sm mr-2" title="edit">'
+                $nestedData['action'] = '<a href="' . base_url("admin/product/up/" . $post->id) . '" class="btn btn-primary btn-sm mr-2" data-type="confirm" title="Up to Top">'
+                    . '<i class="fas fa-arrow-alt-circle-up"></i>'
+                    . '</i>'
+                    . '</a><a href="' . base_url("admin/product/edit/" . $post->id) . '" class="btn btn-warning btn-sm mr-2" title="edit">'
                     . '<i class="fas fa-pencil-alt">'
                     . '</i>'
                     . '</a>'

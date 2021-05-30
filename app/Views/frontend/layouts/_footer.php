@@ -121,7 +121,7 @@
                             <ul class="contact">
                                 <li>
                                     <p class="summary_footer">
-                                        Chúng tôi là Coffee Huy Tùng
+                                        Chúng tôi là Huy Tùng Coffee
                                     </p>
                                 </li>
                                 <li>

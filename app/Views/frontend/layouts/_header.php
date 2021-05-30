@@ -70,7 +70,7 @@
                     <div class="topbar_left">
                         <ul>
                             <li>
-                                <span class="welcome_text">Chào mừng bạn đến với Coffee Huy Tùng !</span>
+                                <span class="welcome_text">Chào mừng bạn đến với Huy Tùng Coffee!</span>
                             </li>
                         </ul>
                     </div>

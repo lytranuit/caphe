@@ -60,6 +60,6 @@ class BaseController extends Controller
         //die();
         $this->data['content'] = $content;
         $this->data['template'] = "main";
-        $this->data['title'] = " | Nhà máy xay xat lúa gạo Phú Yên";
+        $this->data['title'] = " | Huy tùng Coffee";
     }
 }

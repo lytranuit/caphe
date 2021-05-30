@@ -9,6 +9,7 @@ class Home extends BaseController
         $this->data['title'] =  "Trang chủ" . $this->data['title'];
         //echo $this->data['title'];
         //die();  
+        
         return view($this->data['content'], $this->data);
     }
 }

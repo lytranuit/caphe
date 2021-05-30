@@ -67,6 +67,12 @@
                         <?= lang("Custom.product_category") ?>
                     </a>
                 </li>
+                <li>
+                    <a href="<?= base_url("admin/category_menu") ?>">
+                        <i class="metismenu-icon"></i>
+                        <?= lang("Custom.product_menu") ?>
+                    </a>
+                </li>
                 <li class="app-sidebar__heading"><?= lang("Custom.setting") ?></li>
                 <li>
                     <a href="<?= base_url("admin/settings") ?>">
@@ -85,6 +91,12 @@
                     <a href="<?= base_url("admin/user") ?>">
                         <i class="metismenu-icon"></i>
                         <?= lang("Custom.account") ?>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?= base_url("admin/feedback") ?>">
+                        <i class="metismenu-icon"></i>
+                        <?= lang("Custom.feedback") ?>
                     </a>
                 </li>
                 <li>

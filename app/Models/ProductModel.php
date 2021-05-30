@@ -145,9 +145,13 @@ class ProductModel extends Model
             $builder->orLike("name_" . current_language(), $keyword);
             $builder->groupEnd();
         }
+
+        if ($limit > 0) {
+            $builder->limit($limit, $offset);
+        }
         //print_r($builder->where("deleted_at", NULL)->where("deleted", 0)->orderBy("id", "DESC")->limit($limit, $offset)->getCompiledSelect());
         //die();
-        return $builder->where("deleted_at", NULL)->where("deleted", 0)->orderBy("id", "DESC")->limit($limit, $offset)->get()->getResult();
+        return $builder->where("deleted_at", NULL)->where("deleted", 0)->orderBy("date", "DESC")->get()->getResult();
     }
     function create_object($data)
     {

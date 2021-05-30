@@ -43,6 +43,9 @@
             z-index: 1;
         }
     </style>
+    <script src="<?= base_url("assets/js/jquery.min.js") ?>"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js"></script>
+    <script src="<?= base_url("assets/js/caphe.js") ?>"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- CSS -->
@@ -59,7 +62,7 @@
     <div class="site-wrapper">
 
         <?= $this->include('frontend/layouts/_header') ?>
-        
+
         <?= $this->renderSection("content"); ?>
 
         <!-- Site Header -->

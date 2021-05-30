@@ -178,6 +178,8 @@ $lang['setting'] = "";
 $lang['page'] = "";
 $lang['sales'] = "";
 $lang['contact'] = "";
+$lang['product_menu'] = "";
+$lang['feedback'] = "";
 return $lang;
 
 

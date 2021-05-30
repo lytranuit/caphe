@@ -41,14 +41,58 @@ class HomeWidget
 
     public function product()
     {
-        $Product_model = model("ProductModel");
-        $this->data['products'] = $Product_model->orderby("date", "DESC")->limit(10)->findAll();
-        $Product_model->image($this->data['products']);
+        $Category_model = model("CategoryModel");
+        $product_model = model("ProductModel");
+        $this->data['categories'] = $Category_model->where("is_menu", 0)->orderby("date", "DESC")->findAll();
+        foreach ($this->data['categories'] as $key => &$row) {
+            $products = $product_model->get_product($row->id, "", 0, NULL);
+            if (!empty($products)) {
+                $product_model->relation($products, array('image'));
 
-        //echo "<pre>";
-        //print_r($this->data['pages']);
-        //die();
+                $row->products = $products;
+            } else {
+                unset($this->data['categories'][$key]);
+            }
+        }
+
+        // echo "<pre>";
+        // print_r($this->data['categories']);
+        // die();
         return view("lib/home/product", $this->data);
+    }
+
+    public function menu()
+    {
+        $Category_model = model("CategoryModel");
+        $product_model = model("ProductModel");
+        $this->data['categories'] = $Category_model->where("is_menu", 1)->orderby("date", "DESC")->findAll();
+        foreach ($this->data['categories'] as $key => &$row) {
+            $products = $product_model->get_product($row->id, "", 0, NULL);
+            if (!empty($products)) {
+                $product_model->relation($products, array('image'));
+
+                $row->products = $products;
+            } else {
+                unset($this->data['categories'][$key]);
+            }
+        }
+
+        // echo "<pre>";
+        // print_r($this->data['categories']);
+        // die();
+        return view("lib/home/menu", $this->data);
+    }
+
+    public function feedback()
+    {
+        $Feedback_model = model("FeedbackModel");
+        $this->data['feedback'] = $Feedback_model->orderby("date", "DESC")->findAll();
+
+        $Feedback_model->image($this->data['feedback']);
+        // echo "<pre>";
+        // print_r($this->data['categories']);
+        // die();
+        return view("lib/home/feedback", $this->data);
     }
 
     public function news()

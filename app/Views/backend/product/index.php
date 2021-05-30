@@ -19,6 +19,7 @@
                             <th>Hình ảnh</th>
                             <th>Mã</th>
                             <th>Tên</th>
+                            <th>Giá</th>
                             <th>Ngày đăng</th>
                             <th>Hành động</th>
                         </tr>
@@ -64,6 +65,10 @@
                 },{
                     "data": "name_vi"
                 },
+                {
+                    "data": "price"
+                },
+                
                 {
                     "data": "date"
                 },

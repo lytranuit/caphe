@@ -1,0 +1,9 @@
+<?php 
+$lang['danh_muc'] = "カテゴリー";
+$lang['index_menu_slide'] = "カテゴリー";
+$lang['product_category'] = "";
+$lang['news_category'] = "";
+return $lang;
+
+
+?>

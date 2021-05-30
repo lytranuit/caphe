@@ -7,6 +7,7 @@ use App\Models\FileModel;
 class Category extends BaseController
 {
 
+    public $is_menu = 0;
     public function index()
     {
         return view($this->data['content'], $this->data);
@@ -21,6 +22,7 @@ class Category extends BaseController
             $data = $this->request->getPost();
             $data['user_id'] = user_id();
             $data['slug'] = str_slug($data['name_vi']);
+            $data['is_menu'] = $this->is_menu;
             $obj = new \App\Entities\Category();
             $obj->fill($data);
             $obj->date = date("Y-m-d H:i:s");
@@ -39,6 +41,7 @@ class Category extends BaseController
             $Category_model = model("CategoryModel");
             $data = $this->request->getPost();
             $obj = $Category_model->find($id);
+            $data['is_menu'] = $this->is_menu;
             //echo "<pre>";
             //print_r($obj);
             //die();
@@ -59,6 +62,16 @@ class Category extends BaseController
         }
     }
 
+    public function up($id)
+    { /////// trang ca nhan
+        $CategoryModel = model("CategoryModel");
+        $data['date'] = date("Y-m-d H:i:s");
+        $obj = $CategoryModel->create_object($data);
+        $CategoryModel->update($id, $obj);
+        header('Location: ' . $_SERVER['HTTP_REFERER']);
+        exit;
+    }
+
     public function remove($id)
     { /////// trang ca nhan
         $Category_model = model("CategoryModel");
@@ -73,7 +86,7 @@ class Category extends BaseController
         $limit = $this->request->getVar('length');
         $start = $this->request->getVar('start');
         $page = ($start / $limit) + 1;
-        $where = $Category_model;
+        $where = $Category_model->where("is_menu", $this->is_menu);
 
         $totalData = $where->countAllResults();
         //echo "<pre>";
@@ -81,8 +94,9 @@ class Category extends BaseController
         //die();
         $totalFiltered = $totalData;
 
-        $where = $Category_model;
-        $posts = $where->asObject()->orderby("id", "DESC")->paginate($limit, '', $page);
+        $where = $Category_model->where("is_menu", $this->is_menu);
+
+        $posts = $where->asObject()->orderby("date", "DESC")->paginate($limit, '', $page);
         //echo "<pre>";
         //print_r($posts);
         //die();
@@ -97,9 +111,11 @@ class Category extends BaseController
                 $image = isset($post->image->src) ? base_url($post->image->src) : "";
                 $nestedData['image'] = "<img src='$image' width='100'/>";
                 // $image = isset($post->image->src) ? base_url() . $post->image->src : "";
-                $nestedData['is_menu'] = $post->is_menu ? '<i class="fas fa-check text-success"></i>' : '<i class="fas fa-times text-danger"></i>';
                 $nestedData['date'] =  date("d/m/Y", strtotime($post->date));
-                $nestedData['action'] = '<a href="' . base_url("admin/category/edit/" . $post->id) . '" class="btn btn-warning btn-sm mr-2" title="edit">'
+                $nestedData['action'] = '<a href="' . base_url("admin/category/up/" . $post->id) . '" class="btn btn-primary btn-sm mr-2" data-type="confirm" title="Up to Top">'
+                    . '<i class="fas fa-arrow-alt-circle-up"></i>'
+                    . '</i>'
+                    . '</a><a href="' . base_url("admin/category/edit/" . $post->id) . '" class="btn btn-warning btn-sm mr-2" title="edit">'
                     . '<i class="fas fa-pencil-alt">'
                     . '</i>'
                     . '</a>'

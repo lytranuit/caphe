@@ -1,0 +1,9 @@
+<?php 
+$lang['danh_muc'] = "Danh mục";
+$lang['index_menu_slide'] = "Danh mục";
+$lang['product_category'] = "Danh mục sản phẩm";
+$lang['news_category'] = "Danh mục tin tức";
+return $lang;
+
+
+?>

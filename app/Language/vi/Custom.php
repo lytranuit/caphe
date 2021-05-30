@@ -172,12 +172,14 @@ $lang['general'] = "Cài đặt chung";
 $lang['account'] = "Tài khoản";
 $lang['menu'] = "Menu";
 $lang['product'] = "Sản phẩm";
-$lang['product_category'] = "Danh mục";
-$lang['news_category'] = "Danh mục";
+$lang['product_category'] = "Danh mục sản phẩm";
+$lang['news_category'] = "Danh mục tin tức";
 $lang['setting'] = "Cài đặt";
 $lang['page'] = "Trang";
 $lang['sales'] = "Đơn hàng";
 $lang['contact'] = "Liên hệ";
+$lang['product_menu'] = "Danh mục thực đơn";
+$lang['feedback'] = "Feedback";
 return $lang;
 
 
