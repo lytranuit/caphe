@@ -35,6 +35,8 @@ $routes->get('/', 'Home::index');
 //$routes->get('/lang/{locale}', 'Language::index');
 $routes->add('lang/(:any)', 'Language::index/$1');
 
+$routes->add('gioi-thieu', 'Home::about');
+$routes->add('lien-he', 'Home::contact');
 $routes->add('danh-muc', 'Product::index');
 $routes->add('danh-muc/(:any)-c(:num).html', 'Product::category/$2');
 $routes->add('bang-tin', 'News::index');

@@ -14,7 +14,7 @@
                             <a href="/"><span wfd-id="254">Trang chủ</span></a>
                             <span class="mr_lr" wfd-id="253"><i class="fas fa-circle"></i></span>
                         </li>
-                        <li wfd-id="250"><strong><span wfd-id="251">Menu hôm nay</span></strong></li>
+                        <li wfd-id="250"><strong><span wfd-id="251"><?= $category->{pick_language($category, 'name_')} ?></span></strong></li>
                     </ul>
                 </div>
             </div>
@@ -27,7 +27,7 @@
 
             <div class="main_container col-lg-12 padding-col-left-0" wfd-id="77">
                 <div class="box-heading relative heading" wfd-id="243">
-                    <h1 class="title-head margin-top-0">Menu hôm nay</h1>
+                    <h1 class="title-head margin-top-0"><?= $category->{pick_language($category, 'name_')} ?></h1>
                 </div>
                 <div class="category-products products f-left w_100 margin-top-70" wfd-id="78">
                     <section class="products-view products-view-grid" wfd-id="79">
@@ -39,14 +39,14 @@
                                         <div class="product-box product_grid_2">
                                             <div class="product_mini_2 clearfix">
                                                 <div class="img_product">
-                                                    <a class="product-img" href="<?= url_product($row->id) ?>" title="<?= $row->{pick_language($row, 'name_')} ?>">
+                                                    <a class="product-img" href="<?= url_product($row->product_id) ?>" title="<?= $row->{pick_language($row, 'name_')} ?>">
                                                         <img class="lazyload loaded" src="<?= base_url(isset($row->image->src) ? $row->image->src : "assets/images/placeholder.png") ?>" data-src="<?= base_url(isset($row->image->src) ? $row->image->src : "assets/images/placeholder.png") ?>" alt="<?= $row->{pick_language($row, 'name_')} ?>" data-was-processed="true">
                                                     </a>
                                                 </div>
                                                 <div class="product-info">
                                                     <div class="infor_prd">
                                                         <h3 class="name_product">
-                                                            <a href="<?= url_product($row->id) ?>" title="<?= $row->{pick_language($row, 'name_')} ?>" class="product-name">
+                                                            <a href="<?= url_product($row->product_id) ?>" title="<?= $row->{pick_language($row, 'name_')} ?>" class="product-name">
                                                                 <span class="name_product"><?= $row->{pick_language($row, 'name_')} ?></span>
                                                             </a>
                                                         </h3>
@@ -72,7 +72,7 @@
                                 </div>
                             <?php endforeach ?>
                         </div>
-                        <div class="text-left" wfd-id="80">
+                        <div class="text-center" wfd-id="80">
                             <?= $pager->links() ?>
                         </div>
 

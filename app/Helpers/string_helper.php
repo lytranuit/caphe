@@ -344,3 +344,53 @@ if (!function_exists('url_news')) {
         return $url;
     }
 }
+
+if (!function_exists('sync_cart')) {
+
+    function sync_cart()
+    {
+
+        $items = array(
+            'details' => array(),
+            'count_product' => 0,
+            'amount_product' => 0,
+            'paid_amount' => 0,
+            'service_fee' => -1
+        );
+        helper('cookie');
+
+
+        $product_model = model('ProductModel');
+
+        $cart = array();
+        if (get_cookie("DATA_CART") && get_cookie("DATA_CART") != "") {
+            $cart = json_decode(get_cookie("DATA_CART"), true);
+        }
+        if (isset($cart['details']) && count($cart['details']) > 0) {
+            foreach ($cart['details'] as $key => $item) {
+                $data = array();
+                if (!isset($item['id']) || !isset($item['qty'])) {
+                    continue;
+                }
+                $qty = $item['qty'];
+                $id = $item['id'];
+
+                $product = $product_model->where(array('id' => $id))->asObject()->first();
+                $product_model->relation($product, array("image"));
+                $price_this = $product->price;
+                $product->qty = $qty;
+                $product->amount = $qty * $price_this;
+                $items['count_product'] += $qty;
+                $items['amount_product'] += $qty * $price_this;
+
+                $items['details'][] = $product;
+            }
+        }
+
+        $items['paid_amount'] = $items['amount_product'];
+        //echo "<pre>";
+        //print_r($items);
+        //die();
+        return $items;
+    }
+}

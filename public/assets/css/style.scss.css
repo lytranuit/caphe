@@ -5556,8 +5556,6 @@ footer.footer .bottom-ft .list-menu-bft li a {
     justify-content: center;
     height: 100px;
     width: 100px;
-    border: 1px solid #ebebeb;
-    border-radius: 50%;
     overflow: hidden;
     background: #fff;
 }
@@ -5816,21 +5814,10 @@ footer.footer .bottom-ft .list-menu-bft li a {
     font-size: 14px;
     top: 18px;
 }
-
-.main-container .col-main .cart button.reduced_pop.items-count.btn-minus .fa {
-    margin-left: 0px;
-    font-weight: 400;
-}
-
 .main-container .col-main .cart button.increase_pop.items-count.btn-plus {
     right: 7px;
     font-size: 14px;
     top: 3px;
-}
-
-.main-container .col-main .cart button.increase_pop.items-count.btn-plus .fa {
-    margin-right: 0px;
-    font-weight: 400;
 }
 
 .pagee_checkout {

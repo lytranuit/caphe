@@ -19,7 +19,7 @@
                                             <div class="image-blog-left a-center">
 
                                                 <a class="img_bot" href="<?= url_news($row->id) ?>">
-                                                    <img class="lazyload loaded" src="<?= base_url(isset($row->image->src) ? $row->image->src : "assets/images/placeholder.png") ?>" data-src="<?= base_url(isset($row->image->src) ? $row->image->src : "assets/images/placeholder.png") ?>" title="<?= $row->{pick_language($row, 'title_')} ?>" alt="<?= $row->{pick_language($row, 'title_')} ?>" data-was-processed="true">
+                                                    <img class="lazyload" src="<?= base_url(isset($row->image->src) ? $row->image->src : "assets/images/placeholder.png") ?>" data-src="<?= base_url(isset($row->image->src) ? $row->image->src : "assets/images/placeholder.png") ?>" title="<?= $row->{pick_language($row, 'title_')} ?>" alt="<?= $row->{pick_language($row, 'title_')} ?>" data-was-processed="true">
                                                 </a>
 
                                             </div>
@@ -33,7 +33,7 @@
                                                     </h3>
                                                 </div>
                                                 <div class="summary_item_blog">
-                                                    <?= split_string($row->{pick_language($row, 'content_')}, 50) ?>
+                                                    <?= split_string($row->{pick_language($row, 'content_')}, 100) ?>
                                                 </div>
                                             </div>
                                         </div>

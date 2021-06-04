@@ -87,18 +87,17 @@
 
                         </div>
                     </div>
-                    <div class="form-product col-sm-12">
-                        <form enctype="multipart/form-data" id="add-to-cart-form" action="/cart/add" method="post" class="form-inline margin-bottom-0">
+                    <div class="form-product col-sm-12 product" data-id="<?= $info->id ?>">
+                        <div id="add-to-cart-form" class="form-inline margin-bottom-0">
                             <div class="form-group form_button_details">
                                 <div class="form_product_content f-left w_100 ">
                                     <div class="count_btn_style">
                                         <div class="custom input_number_product soluong1 show">
                                             <button class="btn_num num_1 button button_qty" onclick="var result = document.getElementById('qtym'); var qtypro = result.value; if( !isNaN( qtypro ) &amp;&amp; qtypro > 1 ) result.value--;return false;" type="button">-</button>
-                                            <input type="text" id="qtym" name="quantity" value="1" maxlength="2" class="form-control prd_quantity" onkeypress="if ( isNaN(this.value + String.fromCharCode(event.keyCode) )) return false;" onchange="if(this.value == 0)this.value=1;">
+                                            <input type="text" id="qtym" value="1" class="form-control prd_quantity number" onkeypress="if ( isNaN(this.value + String.fromCharCode(event.keyCode) )) return false;" onchange="if(this.value == 0)this.value=1;">
                                             <button class="btn_num num_2 button button_qty" onclick="var result = document.getElementById('qtym'); var qtypro = result.value; if( !isNaN( qtypro )) result.value++;return false;" type="button">+</button>
                                         </div>
                                         <div class="button_actions clearfix">
-
                                             <button type="submit" class="btn btn_add_cart btn-cart add_to_cart btn_base">
                                                 <span class="btn-content">Đặt hàng</span>
                                             </button>
@@ -107,7 +106,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <b class="b_infor">Thông tin:</b>
                     <div class="product-summary product_description margin-bottom-0">

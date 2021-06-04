@@ -7,20 +7,13 @@ class News extends BaseController
 {
     public function index()
     {
-        $tag_model = model("TagModel");
-        $tag_id = $this->request->getVar("tag_id") ?? 0;
-        $this->data['tag_id'] = $tag_id;
-
-        if ($tag_id > 0) {
-            $this->data['tag'] = $tag_model->find($tag_id);
-            $this->data['title'] =   $this->data['tag']->{pick_language($this->data['tag'])} . $this->data['title'];
-        } else {
-            $this->data['title'] =  "Tin tức" . $this->data['title'];
-        }
-        $this->data['tags'] = $tag_model->findAll();
-        //echo "<pre>";
-        //print_r($this->data['news']);
-        //die();
+        $news_model = model("NewsModel");
+        $this->data['news'] = $news_model->paginate(10);
+        $this->data['pager'] = $news_model->pager;
+        $news_model->image($this->data['news']);
+        // echo "<pre>";
+        // print_r($this->data['news']);
+        // die();
         return view($this->data['content'], $this->data);
     }
 

@@ -16,6 +16,77 @@ class CategoryModel extends Model
 
 
 
+    public function relation(&$data, $relation = array())
+    {
+        $type = gettype($data);
+        if ($type == "array" && !isset($data['id'])) {
+            foreach ($data as &$row) {
+                if (gettype($row) == "object") {
+                    if (in_array("image", $relation)) {
+                        $image_id = $row->image_id;
+                        $builder = $this->db->table('cf_file');
+                        $row->image = $builder->where('id', $image_id)->limit(1)->get()->getFirstRow();
+                    }
+
+                    if (in_array("product", $relation)) {
+                        $category_id = $row->id;
+                        $builder = $this->db->table('cf_product_category')->join("cf_category", "cf_product_category.category_id = cf_category.id");
+                        $row->products = $builder->where('category_id', $category_id)->get()->getResult();
+                    }
+                } else {
+                    if (in_array("image", $relation)) {
+                        $image_id = $row['image_id'];
+                        $builder = $this->db->table('cf_file');
+                        $row['image'] = $builder->where('id', $image_id)->limit(1)->get()->getFirstRow("array");
+                    }
+
+                    //if (in_array("image_other", $relation)) {
+                    //    $news_id = $row['id'];
+                    //    $builder = $this->db->table('cf_news_image')->join("cf_file", "cf_news_image.image_id = cf_file.id");
+                    //    $row['image_other'] = $builder->where('news_id', $news_id)->get()->getResult("array");
+                    //}
+                    if (in_array("product", $relation)) {
+                        $category_id = $row['id'];
+                        $builder = $this->db->table('cf_product_category')->join("cf_category", "cf_product_category.category_id = cf_category.id");
+                        $row['products'] = $builder->where('category_id', $category_id)->get()->getResult("array");
+                    }
+                }
+            }
+        } elseif ($type == "array" && isset($data['id'])) {
+            if (in_array("image", $relation)) {
+                $image_id = $data['image_id'];
+                $builder = $this->db->table('cf_file');
+                $data['image'] = $builder->where('id', $image_id)->limit(1)->get()->getFirstRow('array');
+            }
+            //if (in_array("image_other", $relation)) {
+            //    $news_id = $data['id'];
+            //    $builder = $this->db->table('cf_news_image')->join("cf_file", "cf_news_image.image_id = cf_file.id");
+            //    $data['image_other'] = $builder->where('news_id', $news_id)->get()->getResult("array");
+            //}
+            if (in_array("product", $relation)) {
+                $category_id = $data['id'];
+                $builder = $this->db->table('cf_product_category')->join("cf_category", "cf_product_category.category_id = cf_category.id");
+                $data['products'] = $builder->where('category_id', $category_id)->get()->getResult("array");
+            }
+        } else {
+            if (in_array("image", $relation)) {
+                $image_id = $data->image_id;
+                $builder = $this->db->table('cf_file');
+                $data->image = $builder->where('id', $image_id)->limit(1)->get()->getFirstRow();
+            }
+            //if (in_array("image_other", $relation)) {
+            //    $news_id = $data->id;
+            //    $builder = $this->db->table('cf_news_image')->join("cf_file", "cf_news_image.image_id = cf_file.id");
+            //    $data->image_other = $builder->where('news_id', $news_id)->get()->getResult();
+            //}
+            if (in_array("product", $relation)) {
+                $category_id = $data->id;
+                $builder = $this->db->table('cf_product_category')->join("cf_category", "cf_product_category.category_id = cf_category.id");
+                $data->products = $builder->where('category_id', $category_id)->get()->getResult();
+            }
+        }
+        return $data;
+    }
     public function image(&$data)
     {
         $type = gettype($data);

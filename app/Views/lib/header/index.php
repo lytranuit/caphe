@@ -16,7 +16,7 @@
                     <a class="a_level0" href="/gioi-thieu">Giới thiệu</a>
                 </li>
                 <li class="level0 level-top parent level_ico">
-                    <a class="a_level0" href="<?= url_product_list(0) ?>">Sản phẩm</a>
+                    <a class="a_level0" href="#">Sản phẩm</a>
                     <i class="ti-plus hide_close i_level0">
                     </i>
                     <ul class="sub-menu" style="display:none;">
@@ -28,7 +28,7 @@
                     </ul>
                 </li>
                 <li class="level0 level-top parent level_ico">
-                    <a class="a_level0" href="/">Menu</a>
+                    <a class="a_level0" href="#">Menu</a>
                     <i class="ti-plus hide_close i_level0">
                     </i>
                     <ul class="sub-menu" style="display:none;">
@@ -40,7 +40,7 @@
                     </ul>
                 </li>
                 <li class="level0 level-top parent level_ico">
-                    <a class="a_level0" href="/tin-tuc">Tin tức</a>
+                    <a class="a_level0" href="<?= url_news_list(0) ?>">Tin tức</a>
 
                 </li>
 
@@ -97,7 +97,7 @@
                                                 </a>
                                             </li>
                                             <li class="nav-item ">
-                                                <a class="a-img" href="/collections/all">
+                                                <a class="a-img" href="#">
                                                     <span>Sản phẩm</span><i class="fa fa-caret-down"></i>
                                                 </a>
                                                 <ul class="item_small hidden-sm hidden-xs">
@@ -121,7 +121,7 @@
                                         </ul>
                                         <ul class="item_big nav-right hidden-xs hidden-sm">
                                             <li class="nav-item ">
-                                                <a class="a-img" href="/tin-tuc">
+                                                <a class="a-img" href="#">
                                                     <span>Menu</span><i class="fa fa-caret-down"></i>
                                                 </a>
                                                 <ul class="item_small hidden-sm hidden-xs">
@@ -139,7 +139,7 @@
 
 
                                             <li class="nav-item ">
-                                                <a class="a-img" href="/tin-tuc">
+                                                <a class="a-img" href="<?= url_news_list(0) ?>">
                                                     <span>Tin tức</span>
                                                 </a>
                                             </li>

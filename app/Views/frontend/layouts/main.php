@@ -34,6 +34,7 @@
     <link href="<?= base_url("assets/css") ?>/style.scss.css" rel="stylesheet" type="text/css">
     <link href="<?= base_url("assets/css") ?>/module.scss.css" rel="stylesheet" type="text/css">
     <link href="<?= base_url("assets/css") ?>/responsive.scss.css" rel="stylesheet" type="text/css">
+    <link href="<?= base_url("assets/lib/sweetalert/sweetalert.css") ?>" rel="stylesheet" type="text/css">
 
     <style type="text/css">
         .swiper-container {
@@ -48,6 +49,9 @@
     <script src="<?= base_url("assets/js/caphe.js") ?>"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="<?= base_url("assets/lib/sweetalert/sweetalert.min.js") ?>"></script>
+    <script src="<?= base_url("assets/lib/cookie/jquery.cookies.2.2.0.min.js") ?>"></script>
+    <script src="<?= base_url("assets/js/cart.js") ?>"></script>
     <!-- CSS -->
     <?= $this->renderSection('style') ?>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,600,700%7CDancing+Script:400,500,700%7COswald:400,500,600,700" media="all">

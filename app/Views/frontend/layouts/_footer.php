@@ -165,14 +165,13 @@
                             <div class="collapse time_work" id="collapseListMenu02">
                                 <ul class="list-menu">
 
+                                    <li class="li_menu"><a href="<?= base_url("gioi-thieu") ?>">Giới thiệu</a></li>
 
-                                    <li class="li_menu"><a href="<?= url_page(4) ?>">Hướng dẫn mua hàng</a></li>
+                                    <li class="li_menu"><a href="<?= url_product_list(0) ?>">Sản phẩm</a></li>
 
-                                    <li class="li_menu"><a href="<?= url_page(4) ?>">Sản phẩm</a></li>
+                                    <li class="li_menu"><a href="<?= url_product_list(0) ?>">Menu</a></li>
 
-                                    <li class="li_menu"><a href="<?= url_page(4) ?>">Menu</a></li>
-
-                                    <li class="li_menu"><a href="<?= url_page(4) ?>">Liên hệ</a></li>
+                                    <li class="li_menu"><a href="<?= base_url("lien-he") ?>">Liên hệ</a></li>
 
                                 </ul>
                             </div>
