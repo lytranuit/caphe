@@ -159,8 +159,8 @@
                                             <div class="searchion inline-b">
                                                 <span class=" nn"><i class="fas fa-search"></i></span>
                                                 <div class="searchmini">
-                                                    <form action="/search" method="get" class="input-group search-bar" role="search">
-                                                        <input type="text" name="query" value="" autocomplete="off" placeholder="Tìm kiếm..." class="button_gradient input-group-field auto-search ">
+                                                    <form action="/product/search" method="get" class="input-group search-bar" role="search">
+                                                        <input type="text" name="s" value="" autocomplete="off" placeholder="Tìm kiếm..." class="button_gradient input-group-field auto-search ">
                                                         <button type="submit" class=" btn icon-fallback-text">
                                                             <span class="fas fa-search"></span>
                                                         </button>
@@ -210,8 +210,8 @@
 
         <div class="searchboxlager hidden-lg">
             <div class="searchfromtop">
-                <form action="/search" method="get" autocomplete="off">
-                    <input type="search" name="query" value="" placeholder="Tìm kiếm tin tức..." class=" hidden-md st-default-search-input search-text" autocomplete="off">
+                <form action="/product/search" method="get" autocomplete="off">
+                    <input type="search" name="s" value="" placeholder="Tìm kiếm tin tức..." class=" hidden-md st-default-search-input search-text" autocomplete="off">
                     <input type="hidden" class="form-control" name="type" value="article">
                 </form>
             </div>

@@ -79,6 +79,7 @@ h2.title:before {
     transform: translateY(-50%)
 }
 
+
 .row.row-gutter-coll {
     margin-left: -7.5px;
     margin-right: -7.5px;
@@ -5814,6 +5815,7 @@ footer.footer .bottom-ft .list-menu-bft li a {
     font-size: 14px;
     top: 18px;
 }
+
 .main-container .col-main .cart button.increase_pop.items-count.btn-plus {
     right: 7px;
     font-size: 14px;

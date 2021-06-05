@@ -1046,3 +1046,17 @@
         margin-bottom: 50px;
     }
 }
+.product-item{
+    height: 270px;
+}
+
+@media (max-width: 768px) {
+    .product-item{
+        height: 330px;
+    }
+}
+@media (max-width: 425px) {
+    .product-item{
+        height: 200px;
+    }
+}

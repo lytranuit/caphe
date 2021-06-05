@@ -80,7 +80,7 @@
                                         <tr>
                                             <td class="total-text">Tổng tiền thanh toán</td>
                                             <td class="txt-right totals_price price_end"><?= number_format($cart['amount_product'], 0, ",", ".") ?>₫</td>
-                                            <td class="thanhtoan"><a onclick="window.location.href='/checkout'" class="btn-checkout-cart button_checkfor_buy">Tiến hành thanh toán</a></td>
+                                            <td class="thanhtoan"><a onclick="window.location.href='/cart/checkout'" class="btn-checkout-cart button_checkfor_buy">Tiến hành thanh toán</a></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -93,7 +93,7 @@
     </div>
     <div class="wrap_background_aside padding-top-15 margin-bottom-40 padding-left-0 padding-right-0 hidden-md hidden-lg" wfd-id="75">
         <div class="cart-mobile">
-            <form action="/cart" method="post" novalidate="" class="margin-bottom-0">
+            <div>
                 <div class="header-cart">
 
                     <div class="title-cart title_cart_mobile">
@@ -130,12 +130,12 @@
                         <div class="title-cart">
                             <h3 class="text-xs-left">Tổng tiền</h3><a class="text-xs-right pull-right totals_price_mobile"><?= number_format($cart['amount_product'], 0, ",", ".") ?>₫</a>
                         </div>
-                        <div class="checkout"><button class="btn-proceed-checkout-mobile" title="Tiến hành thanh toán" type="button" onclick="window.location.href='/checkout'" wfd-id="190"><span>Tiến hành thanh toán</span></button>
-                        <button class="form-cart-continue btn f-left" title="Tiếp tục mua hàng" type="button" onclick="window.location.href='/'" wfd-id="189"><span>Tiếp tục mua hàng</span></button></div>
+                        <div class="checkout"><button class="btn-proceed-checkout-mobile" title="Tiến hành thanh toán" type="button" onclick="window.location.href='/cart/checkout'" wfd-id="190"><span>Tiến hành thanh toán</span></button>
+                            <button class="form-cart-continue btn f-left" title="Tiếp tục mua hàng" type="button" onclick="window.location.href='/'" wfd-id="189"><span>Tiếp tục mua hàng</span></button>
+                        </div>
                     </div>
                 </div>
-
-            </form>
+            </div>
         </div>
     </div>
 </section>

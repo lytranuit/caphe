@@ -8,13 +8,6 @@ class Product extends BaseController
 {
     public function index()
     {
-        $product_model = model("ProductModel");
-        $this->data['products'] = $product_model->paginate(10);
-        $this->data['pager'] = $product_model->pager;
-        $product_model->image($this->data['products']);
-        echo "<pre>";
-        print_r($this->data['products']);
-        die();
         return view($this->data['content'], $this->data);
     }
     public function category($category_id)
@@ -61,6 +54,30 @@ class Product extends BaseController
         //die();
 
         $this->data['title'] =   $this->data['info']->{pick_language($this->data['info'])} . $this->data['title'];
+        return view($this->data['content'], $this->data);
+    }
+    public function search()
+    {
+
+        $search = $this->request->getVar("s");
+        $product_model = model("ProductModel");
+
+        $this->data['products'] = $product_model->select('cf_product.id,cf_product.code,cf_product.name_vi,cf_product.price,cf_product.image_id')
+            ->join('cf_product_category', 'cf_product_category.product_id = cf_product.id')
+            ->join('cf_category', 'cf_product_category.category_id = cf_category.id')
+            ->where("cf_category.is_menu", 0)
+            ->like('cf_product.name_vi', $search)->groupBy("product_id")->paginate(10);
+        // echo $this->data['products'];
+        // die();
+        $this->data['pager'] = $product_model->select('cf_product.id,cf_product.code,cf_product.name_vi,cf_product.price,cf_product.image_id')
+            ->join('cf_product_category', 'cf_product_category.product_id = cf_product.id')
+            ->join('cf_category', 'cf_product_category.category_id = cf_category.id')
+            ->where("cf_category.is_menu", 0)
+            ->like('cf_product.name_vi', $search)->groupBy("product_id")->pager;
+
+        $product_model->image($this->data['products']);
+        $this->data['search'] = $search;
+        $this->data['title'] = "Tìm kiếm : $search" . $this->data['title'];
         return view($this->data['content'], $this->data);
     }
 }

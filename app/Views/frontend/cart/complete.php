@@ -2,29 +2,35 @@
 
 
 <?= $this->section('content') ?>
-<div class="checkout-page-title page-title">
-    <div class="page-title-inner flex-row medium-flex-wrap container">
-        <div class="flex-col flex-grow medium-text-center">
-           
-            <nav class="breadcrumbs heading-font checkout-breadcrumbs text-center h2 strong">
-                <a href="<?= base_url("cart") ?>" class="no-click hide-for-small ">Giỏ hàng</a>
-                <span class="divider hide-for-small"><i class="icon-angle-right"></i></span>
-                <a href="<?= base_url("cart/checkout") ?>" class="no-click hide-for-small">Thanh toán</a>
-                <span class="divider hide-for-small"><i class="icon-angle-right"></i></span>
-                <a href="#" class="no-click current">Hoàn tất</a>
-            </nav>
-        </div><!-- .flex-left -->
-    </div><!-- flex-row -->
-</div><!-- .page-title -->
+
+<div class="breadcrumb_nobackground margin-bottom-40" wfd-id="111">
+    <section class="bread-crumb" wfd-id="112">
+        <span class="crumb-border" wfd-id="122"></span>
+        <div class="container" wfd-id="113">
+            <div class="row" wfd-id="114">
+                <div class="col-xs-12 a-left" wfd-id="115">
+                    <ul class="breadcrumb" wfd-id="116">
+                        <li class="home" wfd-id="119">
+                            <a href="/"><span wfd-id="121">Trang chủ</span></a>
+                            <span class="mr_lr" wfd-id="120"><i class="fas fa-circle"></i></span>
+                        </li>
+
+                        <li wfd-id="117"><strong><span wfd-id="118">Hoàn tất</span></strong></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
 <div class="cart-container container page-wrapper page-checkout">
     <div class="woocommerce">
         <div class="woocommerce-notices-wrapper"></div>
         <div name="checkout" method="post" class="checkout woocommerce-checkout ">
 
             <div class="row pt-0 ">
-                <div class="large-7 col  ">
-
-
+                <h1 class="col-md-12 message text-info text-center">Bạn đã đặt hàng thành công! Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất!</h1>
+                <div class="col-md-7">
                     <div id="customer_details">
                         <div class="clear">
                             <div class="woocommerce-billing-fields">
@@ -55,7 +61,7 @@
 
                 </div><!-- large-7 -->
 
-                <div class="large-5 col">
+                <div class="col-md-5">
 
                     <div class="col-inner has-border">
                         <div class="checkout-sidebar sm-touch-scroll">
