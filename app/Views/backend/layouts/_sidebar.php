@@ -73,6 +73,13 @@
                         <?= lang("Custom.product_menu") ?>
                     </a>
                 </li>
+                <li class="app-sidebar__heading"><?= lang("Custom.sales") ?></li>
+                <li>
+                    <a href="<?= base_url("admin/sale") ?>">
+                        <i class="metismenu-icon"></i>
+                        <?= lang("Custom.sales") ?>
+                    </a>
+                </li>
                 <li class="app-sidebar__heading"><?= lang("Custom.setting") ?></li>
                 <li>
                     <a href="<?= base_url("admin/settings") ?>">
