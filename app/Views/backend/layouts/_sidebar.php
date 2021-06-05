@@ -81,12 +81,12 @@
                     </a>
                 </li>
                 <li class="app-sidebar__heading"><?= lang("Custom.setting") ?></li>
-                <li>
+                <!-- <li>
                     <a href="<?= base_url("admin/settings") ?>">
                         <i class="metismenu-icon"></i>
                         <?= lang("Custom.general") ?>
                     </a>
-                </li>
+                </li> -->
 
                 <li>
                     <a href="<?= base_url("admin/page") ?>">
@@ -106,12 +106,12 @@
                         <?= lang("Custom.feedback") ?>
                     </a>
                 </li>
-                <li>
+                <!-- <li>
                     <a href="<?= base_url("admin/language") ?>">
                         <i class="metismenu-icon fas fa-columns"></i>
                         <?= lang("Custom.language") ?>
                     </a>
-                </li>
+                </li> -->
             </ul>
         </div>
     </div>
