@@ -5,7 +5,7 @@
                 <h2>Khách hàng nói gì</h2>
             </div>
 
-            <div class="swiper-container gallery-thumbs swiper-container-initialized swiper-container-horizontal swiper-container-free-mode swiper-container-thumbs">
+            <!-- <div class="swiper-container gallery-thumbs swiper-container-initialized swiper-container-horizontal swiper-container-free-mode swiper-container-thumbs">
                 <div class="swiper-wrapper" id="swiper-wrapper-b5a6d12f8de43431" aria-live="polite">
                     <?php foreach ($feedback as $row) : ?>
                         <div class="swiper-slide item thumb_small swiper-slide-visible swiper-slide-active swiper-slide-thumb-active" role="group">
@@ -16,7 +16,7 @@
                     <?php endforeach ?>
                 </div>
                 <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-            </div>
+            </div> -->
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <!-- Swiper -->
                 <div class="swiper-container gallery-top swiper-container-initialized swiper-container-horizontal">
@@ -48,15 +48,15 @@
         </div>
     </div>
     <script>
-        var galleryThumbs = new Swiper('.gallery-thumbs', {
-            spaceBetween: 30,
-            slidesPerView: 3,
-            loop: false,
-            freeMode: true,
-            loopedSlides: 3, //looped slides should be the same
-            watchSlidesVisibility: true,
-            watchSlidesProgress: true,
-        });
+        // var galleryThumbs = new Swiper('.gallery-thumbs', {
+        //     spaceBetween: 30,
+        //     slidesPerView: 3,
+        //     loop: false,
+        //     freeMode: true,
+        //     loopedSlides: 3, //looped slides should be the same
+        //     watchSlidesVisibility: true,
+        //     watchSlidesProgress: true,
+        // });
         var galleryTop = new Swiper('.gallery-top', {
             spaceBetween: 0,
             loop: false,
@@ -65,9 +65,9 @@
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
-            thumbs: {
-                swiper: galleryThumbs,
-            },
+            // thumbs: {
+            //     swiper: galleryThumbs,
+            // },
         });
     </script>
 </section>

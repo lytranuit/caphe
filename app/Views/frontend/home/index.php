@@ -64,8 +64,6 @@
 </div>
 
 
-
-<?= view_cell("\App\Libraries\HomeWidget::menu") ?>
 <?= view_cell("\App\Libraries\HomeWidget::feedback") ?>
 
 <?= view_cell("\App\Libraries\HomeWidget::news") ?>

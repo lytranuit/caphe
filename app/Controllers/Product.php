@@ -22,7 +22,7 @@ class Product extends BaseController
             $this->data['content'] = "frontend/product/productview";
         }
 
-        $this->data['products'] = $product_model->join('cf_product_category', 'cf_product_category.product_id = cf_product.id')->where("category_id", $category_id)->paginate(10);
+        $this->data['products'] = $product_model->join('cf_product_category', 'cf_product_category.product_id = cf_product.id')->where("category_id", $category_id)->paginate(12);
 
         $this->data['pager'] = $product_model->join('cf_product_category', 'cf_product_category.product_id = cf_product.id')->where("category_id", $category_id)->pager;
 
@@ -66,7 +66,7 @@ class Product extends BaseController
             ->join('cf_product_category', 'cf_product_category.product_id = cf_product.id')
             ->join('cf_category', 'cf_product_category.category_id = cf_category.id')
             ->where("cf_category.is_menu", 0)
-            ->like('cf_product.name_vi', $search)->groupBy("product_id")->paginate(10);
+            ->like('cf_product.name_vi', $search)->groupBy("product_id")->paginate(12);
         // echo $this->data['products'];
         // die();
         $this->data['pager'] = $product_model->select('cf_product.id,cf_product.code,cf_product.name_vi,cf_product.price,cf_product.image_id')
