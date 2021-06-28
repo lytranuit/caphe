@@ -48,8 +48,8 @@ class Ajax extends BaseController
         ini_set('post_max_size', '64M');
         ini_set('upload_max_filesize', '64M');
         $date = date("Y-m-d");
-        $upload_path_url = "assets/uploads/$date/";
-        $dir = ROOTPATH . 'public/assets/uploads/' . $date;
+        $upload_path_url = "uploads/$date/";
+        $dir = ROOTPATH . 'uploads/' . $date;
         if (!file_exists($dir)) {
             mkdir($dir, 0777, true);
         }
