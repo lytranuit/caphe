@@ -85,38 +85,6 @@
     left: -5px
 }
 
-.home-slider .item:nth-child(1) .img_mobi {
-    background-image: url("//bizweb.dktcdn.net/100/346/521/themes/818256/assets/slider_1.jpg?1593508429561")
-}
-
-@media (max-width: 767px) {
-    .home-slider .item:nth-child(1) .img_mobi {
-        background-image: url("//bizweb.dktcdn.net/thumb/grande/100/346/521/themes/818256/assets/slider_1.jpg")
-    }
-}
-
-.home-slider .item:nth-child(2) .img_mobi {
-    background-image: url("//bizweb.dktcdn.net/100/346/521/themes/818256/assets/slider_2.jpg?1593508429561")
-}
-
-@media (max-width: 767px) {
-    .home-slider .item:nth-child(2) .img_mobi {
-        background-image: url("//bizweb.dktcdn.net/thumb/grande/100/346/521/themes/818256/assets/slider_2.jpg")
-    }
-}
-
-.home-slider .item:nth-child(3) .img_mobi {
-    background-image: url("//bizweb.dktcdn.net/100/346/521/themes/818256/assets/slider_3.jpg?1593508429561")
-}
-
-.home-slider .item:nth-child(4) .img_mobi {
-    background-image: url("//bizweb.dktcdn.net/100/346/521/themes/818256/assets/slider_4.jpg?1593508429561")
-}
-
-.home-slider .item:nth-child(5) .img_mobi {
-    background-image: url("//bizweb.dktcdn.net/100/346/521/themes/818256/assets/slider_5.jpg?1593508429561")
-}
-
 .home-slider .item {
     position: relative
 }
@@ -377,26 +345,6 @@
 .mega-content .item_blog_big h3:hover {
     cursor: pointer;
     color: #e7b45a !important
-}
-
-.section_feedback {
-    margin-top: 40px;
-    background-image: url(//bizweb.dktcdn.net/100/346/521/themes/818256/assets/bg_menutoday.jpg?1593508429561);
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: 100%;
-    padding: 90px 0 80px 0;
-    background-size: cover;
-    position: relative;
-}
-
-.section_about {
-    color: #707070;
-    background-image: url(//bizweb.dktcdn.net/100/346/521/themes/818256/assets/bg_hours_book.jpg?1593508429561);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
 .section_about .module_left {
@@ -928,7 +876,7 @@
 .section_feedback .gallery-top .swiper-slide.item .content_thumb_bb p:before {
     content: "";
     position: absolute;
-    background-image: url("//bizweb.dktcdn.net/100/346/521/themes/818256/assets/icon_kh.png?1593508429561");
+    background-image: url("../images/icon_kh.png");
     background-repeat: no-repeat;
     width: 55px;
     height: 38px;
@@ -945,7 +893,7 @@
 .section_feedback .gallery-top .swiper-slide.item .content_thumb_bb p:after {
     content: "";
     position: absolute;
-    background-image: url("//bizweb.dktcdn.net/100/346/521/themes/818256/assets/icon_kh2.png?1593508429561");
+    background-image: url("../images/icon_kh2.png");
     background-repeat: no-repeat;
     width: 55px;
     height: 38px;
@@ -966,7 +914,7 @@
 .section_hours_book {
     margin-top: 105px;
     padding: 110px 0;
-    background-image: url("//bizweb.dktcdn.net/100/346/521/themes/818256/assets/bg_hours_book.jpg?1593508429561");
+    background-image: url("../images/bg_hours_book.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center
@@ -1499,14 +1447,6 @@
 
 .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
     border-color: #e7b45a
-}
-
-.form_contact_footer .banner-hours-book {
-    position: relative;
-    width: 100%;
-    height: 488px;
-    background-repeat: no-repeat;
-    background-image: url("//bizweb.dktcdn.net/100/346/521/themes/818256/assets/banner-hours-book.png?1593508429561")
 }
 
 @media (max-width: 991px) {

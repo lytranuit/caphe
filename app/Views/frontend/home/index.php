@@ -9,7 +9,7 @@
             <div class="swiper-slide" role="group" aria-label="1 / 2">
                 <a href="#" class="clearfix" title="Slider 1">
                     <picture>
-                        <source media="(max-width: 767px)" srcset="//bizweb.dktcdn.net/thumb/grande/100/346/521/themes/818256/assets/slider_1.jpg?1619594503248">
+                        <source media="(max-width: 767px)" srcset="<?= base_url("assets/images/slider_1.jpg") ?>">
                         <img src="<?= base_url("assets/images/slider_1.jpg") ?>" alt="Slider 1">
                     </picture>
                 </a>

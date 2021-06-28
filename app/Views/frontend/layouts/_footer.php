@@ -12,7 +12,7 @@
                                 <div class="col-item-srv">
                                     <div class="service_item_ed">
                                         <span class="iconx">
-                                            <img alt="Coffee chất lượng hàng <br> đầu của Châu Âu" class="lazyload loaded" src="//bizweb.dktcdn.net/100/346/521/themes/818256/assets/service_1.png?1619594503248" data-src="//bizweb.dktcdn.net/100/346/521/themes/818256/assets/service_1.png?1619594503248" data-was-processed="true">
+                                            <img alt="Coffee chất lượng hàng <br> đầu của Châu Âu" class="lazyload loaded" src="<?= base_url("assets/images/service_1.png") ?>" data-src="<?= base_url("assets/images/service_1.png") ?>" data-was-processed="true">
                                         </span>
                                         <div class="content_srv">
                                             <span class="title_service">Coffee chất lượng hàng <br> đầu của Châu Âu</span>
@@ -27,7 +27,7 @@
                                 <div class="col-item-srv">
                                     <div class="service_item_ed">
                                         <span class="iconx">
-                                            <img alt="Coffee chất lượng hàng <br> đầu của Châu Âu" class="lazyload loaded" src="//bizweb.dktcdn.net/100/346/521/themes/818256/assets/service_2.png?1619594503248" data-src="//bizweb.dktcdn.net/100/346/521/themes/818256/assets/service_2.png?1619594503248" data-was-processed="true">
+                                            <img alt="Coffee chất lượng hàng <br> đầu của Châu Âu" class="lazyload loaded" src="<?= base_url("assets/images/service_2.png") ?>" data-src="<?= base_url("assets/images/service_2.png") ?>" data-was-processed="true">
                                         </span>
                                         <div class="content_srv">
                                             <span class="title_service">Giao hàng - Vận chuyển <br> Đảm bảo, nhanh chóng</span>
@@ -42,7 +42,7 @@
                                 <div class="col-item-srv">
                                     <div class="service_item_ed">
                                         <span class="iconx">
-                                            <img alt="Coffee chất lượng hàng <br> đầu của Châu Âu" class="lazyload loaded" src="//bizweb.dktcdn.net/100/346/521/themes/818256/assets/service_3.png?1619594503248" data-src="//bizweb.dktcdn.net/100/346/521/themes/818256/assets/service_3.png?1619594503248" data-was-processed="true">
+                                            <img alt="Coffee chất lượng hàng <br> đầu của Châu Âu" class="lazyload loaded" src="<?= base_url("assets/images/service_3.png") ?>" data-src="<?= base_url("assets/images/service_3.png") ?>"" data-was-processed="true">
                                         </span>
                                         <div class="content_srv">
                                             <span class="title_service">ĐỘI NGŨ CHUYÊN NGHIỆP
