@@ -26,7 +26,7 @@
         <div class="row">
             <?php if (!empty($info->files)) : ?>
                 <?php foreach ($info->files as $row) : ?>
-                    <div class="col-lg-3 col-md-4 col-xs-2 m-2">
+                    <div class="col-lg-3 col-md-4 col-xs-6 m-2">
                         <a class="fancybox box-image" href="<?= $row->file_url ?>" data-fancybox="group2">
                             <img src="<?= $row->file_url ?>" />
                         </a>

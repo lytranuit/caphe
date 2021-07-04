@@ -4,19 +4,19 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="description" content="">
-    <meta name="keywords" content="gao phu yen, nha may xay xat, lua gao phu yen, gao xay moc, gao dac san,gao lam bun, gao lam banh trang,gao cac loai">
+    <meta name="description" content="Với kinh nghiệm hơn 40 năm hoạt động trong lĩnh vực chế biến cà phê, Công ty TNHH Cà phê Huy Tùng đã cho ra đời nhiều dòng sản phẩm được khách hàng cả nước ưa chuộng">
+    <meta name="keywords" content="Với kinh nghiệm hơn 40 năm hoạt động trong lĩnh vực chế biến cà phê, Công ty TNHH Cà phê Huy Tùng đã cho ra đời nhiều dòng sản phẩm được khách hàng cả nước ưa chuộng">
     <meta property="og:url" content="<?= base_url() ?>">
-    <meta property="og:title" content="Tú Loan | Nhà máy xay xat lúa gạo Phú Yên">
+    <meta property="og:title" content="Huy tùng coffee">
     <meta property="og:type" content="article">
-    <meta property="og:description" content="">
-    <meta property="og:image" content="<?= base_url("assets/images/logo.png?v=1") ?>">
+    <meta property="og:description" content="Với kinh nghiệm hơn 40 năm hoạt động trong lĩnh vực chế biến cà phê, Công ty TNHH Cà phê Huy Tùng đã cho ra đời nhiều dòng sản phẩm được khách hàng cả nước ưa chuộng">
+    <meta property="og:image" content="<?= base_url("assets/images/logo/logo.png?v=1") ?>">
 
     <meta name="robots" content="index,follow" />
     <link rel="canonical" href="<?= base_url() ?>">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="<?= base_url("assets/images/logo.png") ?>">
+    <link rel="shortcut icon" type="image/x-icon" href="<?= base_url("assets/images/logo/logo.png?v=1") ?>">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="author" content="daotran">
