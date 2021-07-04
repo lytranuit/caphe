@@ -345,6 +345,19 @@ if (!function_exists('url_news')) {
     }
 }
 
+if (!function_exists('url_library')) {
+
+    function url_library($id)
+    {
+        $url = base_url();
+        if ($id > 0) {
+            $library_model = model("LibraryModel");
+            $library = $library_model->find($id);
+            $url = base_url("thu-vien/" . ($library->slug != '' ? $library->slug : str_slug($library->title_vi)) . "-c$id.html");
+        }
+        return $url;
+    }
+}
 if (!function_exists('sync_cart')) {
 
     function sync_cart()

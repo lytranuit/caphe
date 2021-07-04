@@ -6,6 +6,15 @@
 <div class="section_slider">
     <div class="home-slider section_slider swiper-container">
         <div class="swiper-wrapper" id="swiper-wrapper-1375be3df72c34ff">
+
+            <div class="swiper-slide" role="group" aria-label="2 / 2">
+                <a href="#" class="clearfix" title="Slider 2">
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="<?= base_url("assets/userfiles/images/4164343.png") ?>">
+                        <img src="<?= base_url("assets/userfiles/images/4164343.png") ?>" alt="Slider 1">
+                    </picture>
+                </a>
+            </div>
             <div class="swiper-slide" role="group" aria-label="1 / 2">
                 <a href="#" class="clearfix" title="Slider 1">
                     <picture>
@@ -63,8 +72,81 @@
     </div>
 </div>
 
+<div id="hinhanh" class="st section_gallery">
+    <div class="container">
+        <div class="row">
+            <div class="heading">
+                <h2>Hình ảnh quán cafe</h2>
+            </div>
+            <div class="gallery_content">
+                <div class="blog-list blog-image-list">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="al-item">
+                            <img class="lazyload fancybox" src="<?= base_url("assets/userfiles/images/quan/z2580598016654_e25ba333f1545c69d861f70085f8eb79.jpg") ?>" data-src="<?= base_url("assets/userfiles/images/quan/z2580598016654_e25ba333f1545c69d861f70085f8eb79.jpg") ?>" alt="Coffee House" data-was-processed="true">
+                            <a href="<?= base_url("assets/userfiles/images/quan/z2580598016654_e25ba333f1545c69d861f70085f8eb79.jpg") ?>" class="fancybox">
+                                <i class="fa fa-search-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 content_right">
+                        <div class="row">
 
-<?= view_cell("\App\Libraries\HomeWidget::feedback") ?>
+
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 margin-bottom-30 item">
+                                <div class="al-item al-item-min">
+                                    <img class="lazyload" src="<?= base_url("assets/userfiles/images/quan/z2580597991134_0ab28371813d66a6b891756552112935.jpg") ?>" data-src="<?= base_url("assets/userfiles/images/quan/z2580597991134_0ab28371813d66a6b891756552112935.jpg") ?>" alt="Coffee House" data-was-processed="true">
+                                    <a href="<?= base_url("assets/userfiles/images/quan/z2580597991134_0ab28371813d66a6b891756552112935.jpg") ?>" class="fancybox">
+                                        <i class="fa fa-search-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 margin-bottom-30 item">
+                                <div class="al-item al-item-min">
+                                    <img class="lazyload" src="<?= base_url("assets/userfiles/images/quan/z2580597987276_94aa8c6d6be8da235dbc0289a18670c5.jpg") ?>" data-src="<?= base_url("assets/userfiles/images/quan/z2580597987276_94aa8c6d6be8da235dbc0289a18670c5.jpg") ?>" alt="Coffee House" data-was-processed="true">
+                                    <a href="<?= base_url("assets/userfiles/images/quan/z2580597987276_94aa8c6d6be8da235dbc0289a18670c5.jpg") ?>" class="fancybox">
+                                        <i class="fa fa-search-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 margin-bottom-30 item">
+                                <div class="al-item al-item-min">
+                                    <img class="lazyload" src="<?= base_url("assets/userfiles/images/quan/z2580598020115_cf802644b566ff98a0c5733f2758e36b.jpg") ?>" data-src="<?= base_url("assets/userfiles/images/quan/z2580598020115_cf802644b566ff98a0c5733f2758e36b.jpg") ?>" alt="Coffee House" data-was-processed="true">
+                                    <a href="<?= base_url("assets/userfiles/images/quan/z2580598020115_cf802644b566ff98a0c5733f2758e36b.jpg") ?>" class="fancybox">
+                                        <i class="fa fa-search-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 margin-bottom-30 item">
+                                <div class="al-item al-item-min">
+                                    <img class="lazyload" src="<?= base_url("assets/userfiles/images/quan/z2580597987419_24f3227c25de3be5d2ba9419442ef11f.jpg") ?>" data-src="<?= base_url("assets/userfiles/images/quan/z2580597987419_24f3227c25de3be5d2ba9419442ef11f.jpg") ?>" alt="Coffee House" data-was-processed="true">
+                                    <a href="<?= base_url("assets/userfiles/images/quan/z2580597987419_24f3227c25de3be5d2ba9419442ef11f.jpg") ?>" class="fancybox">
+                                        <i class="fa fa-search-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-md-offset-2 col-xs-12 a-center">
+                        <iframe width="100%" height="412" src="https://www.youtube.com/embed/CsioskQDXxo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 a-center">
+                        <a href="<?= base_url("thu-vien") ?>" title="Xem thêm" class="view_more_cls">Xem thêm <i class="fas fa-caret-right"></i></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<?= view_cell("\App\Libraries\HomeWidget::menu") ?>
 
 <?= view_cell("\App\Libraries\HomeWidget::news") ?>
 <?= $this->endSection() ?>
@@ -72,4 +154,5 @@
 
 
 <?= $this->section("script") ?>
+
 <?= $this->endSection() ?>

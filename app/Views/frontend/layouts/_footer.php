@@ -42,7 +42,7 @@
                                 <div class="col-item-srv">
                                     <div class="service_item_ed">
                                         <span class="iconx">
-                                            <img alt="Coffee chất lượng hàng <br> đầu của Châu Âu" class="lazyload loaded" src="<?= base_url("assets/images/service_3.png") ?>" data-src="<?= base_url("assets/images/service_3.png") ?>"" data-was-processed="true">
+                                            <img alt="Coffee chất lượng hàng <br> đầu của Châu Âu" class="lazyload loaded" src="<?= base_url("assets/images/service_3.png") ?>" data-src="<?= base_url("assets/images/service_3.png") ?>"" data-was-processed=" true">
                                         </span>
                                         <div class="content_srv">
                                             <span class="title_service">ĐỘI NGŨ CHUYÊN NGHIỆP
@@ -105,7 +105,7 @@
     </div>
     <div class="mid-footer mid_footer">
         <div class="container">
-            <div class="row" style="padding: 61px 0px;">>
+            <div class="row" style="padding: 61px 0px;">
                 <div class="col-lg-5 col-md-6 col-sm-6 col-xs-12">
                     <div class="box-maps">
                         <div class="iFrameMap">
@@ -183,7 +183,7 @@
                                 </a>
                             </h4>
                             <div class="collapse" id="collapseListMenu01">
-
+                                <div style="color:#b7b7b7">https://www.facebook.com/HuyTungCoffee78</div>
                             </div>
                         </div>
 

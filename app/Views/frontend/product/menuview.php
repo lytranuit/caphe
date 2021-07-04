@@ -39,14 +39,14 @@
                                         <div class="product-box product_grid_2">
                                             <div class="product_mini_2 clearfix">
                                                 <div class="img_product">
-                                                    <a class="product-img" href="<?= url_product($row->product_id) ?>" title="<?= $row->{pick_language($row, 'name_')} ?>">
+                                                    <a class="product-img" title="<?= $row->{pick_language($row, 'name_')} ?>">
                                                         <img class="lazyload loaded" src="<?= base_url(isset($row->image->src) ? $row->image->src : "assets/images/placeholder.png") ?>" data-src="<?= base_url(isset($row->image->src) ? $row->image->src : "assets/images/placeholder.png") ?>" alt="<?= $row->{pick_language($row, 'name_')} ?>" data-was-processed="true">
                                                     </a>
                                                 </div>
                                                 <div class="product-info">
                                                     <div class="infor_prd">
                                                         <h3 class="name_product">
-                                                            <a href="<?= url_product($row->product_id) ?>" title="<?= $row->{pick_language($row, 'name_')} ?>" class="product-name">
+                                                            <a title="<?= $row->{pick_language($row, 'name_')} ?>" class="product-name">
                                                                 <span class="name_product"><?= $row->{pick_language($row, 'name_')} ?></span>
                                                             </a>
                                                         </h3>

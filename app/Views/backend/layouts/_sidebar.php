@@ -39,7 +39,13 @@
                         <?= lang("Custom.dashboard") ?>
                     </a>
                 </li>
-
+                <li class="app-sidebar__heading">Thư viện</li>
+                <li>
+                    <a href="<?= base_url("admin/library") ?>">
+                        <i class="metismenu-icon"></i>
+                        Thư viện
+                    </a>
+                </li>
                 <li class="app-sidebar__heading"><?= lang("Custom.news") ?></li>
                 <li>
                     <a href="<?= base_url("admin/news") ?>">

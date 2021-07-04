@@ -28,4 +28,17 @@ class Home extends BaseController
 
         return view($this->data['content'], $this->data);
     }
+    public function library()
+    {
+        $this->data['title'] =  "Thư viện" . $this->data['title'];
+        //echo $this->data['title'];
+        //die();  
+
+        $library_model = model("LibraryModel");
+        $this->data['libraries'] = $library_model->findAll();
+
+
+        $library_model->image($this->data['libraries']);
+        return view($this->data['content'], $this->data);
+    }
 }

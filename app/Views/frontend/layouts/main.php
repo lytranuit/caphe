@@ -22,19 +22,17 @@
     <meta name="author" content="daotran">
     <meta name="copyright" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="<?= base_url("assets/css") ?>/all.css" />
-    <link rel="preload" as="style" type="text/css" href="<?= base_url("assets/css") ?>/plugin.scss.css">
-    <link rel="preload" as="style" type="text/css" href="<?= base_url("assets/css") ?>/base.scss.css">
-    <link rel="preload" as="style" type="text/css" href="<?= base_url("assets/css") ?>/style.scss.css">
-    <link rel="preload" as="style" type="text/css" href="<?= base_url("assets/css") ?>/module.scss.css">
-    <link rel="preload" as="style" type="text/css" href="<?= base_url("assets/css") ?>/responsive.scss.css">
-    <link href="<?= base_url("assets/css") ?>/plugin.scss.css" rel="stylesheet" type="text/css">
     <!-- Build Main CSS -->
-    <link href="<?= base_url("assets/css") ?>/base.scss.css" rel="stylesheet" type="text/css">
-    <link href="<?= base_url("assets/css") ?>/style.scss.css" rel="stylesheet" type="text/css">
-    <link href="<?= base_url("assets/css") ?>/module.scss.css" rel="stylesheet" type="text/css">
-    <link href="<?= base_url("assets/css") ?>/responsive.scss.css" rel="stylesheet" type="text/css">
+    <link href="<?= base_url("assets/css/all.css?" . time()) ?>" rel="stylesheet" type="text/css">
+    <link href="<?= base_url("assets/css/plugin.scss.css?" . time()) ?>" rel="stylesheet" type="text/css">
+    <link href="<?= base_url("assets/css/base.scss.css?" . time()) ?>" rel="stylesheet" type="text/css">
+    <link href="<?= base_url("assets/css/style.scss.css?" . time()) ?>" rel="stylesheet" type="text/css">
+    <link href="<?= base_url("assets/css/module.scss.css?" . time()) ?>" rel="stylesheet" type="text/css">
+    <link href="<?= base_url("assets/css/responsive.scss.css?" . time()) ?>" rel="stylesheet" type="text/css">
+
+
     <link href="<?= base_url("assets/lib/sweetalert/sweetalert.css") ?>" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="<?= base_url("assets/lib/fancybox/jquery.fancybox.css") ?>" />
 
     <style type="text/css">
         .swiper-container {
@@ -46,9 +44,10 @@
     </style>
     <script src="<?= base_url("assets/js/jquery.min.js") ?>"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js"></script>
-    <script src="<?= base_url("assets/js/caphe.js") ?>"></script>
+    <script src="<?= base_url("assets/js/caphe.js?" . time()) ?>"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="<?= base_url("assets/lib/fancybox/jquery.fancybox.js") ?>"></script>
     <script src="<?= base_url("assets/lib/sweetalert/sweetalert.min.js") ?>"></script>
     <script src="<?= base_url("assets/lib/cookie/jquery.cookies.2.2.0.min.js") ?>"></script>
     <script src="<?= base_url("assets/js/cart.js") ?>"></script>
@@ -57,6 +56,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,600,700%7CDancing+Script:400,500,700%7COswald:400,500,600,700" media="all">
     <script>
         var path = '<?= base_url() ?>/';
+        $(document).ready(function() {
+            $(".fancybox").fancybox()
+        })
     </script>
 
     <title><?= $title ?></title>

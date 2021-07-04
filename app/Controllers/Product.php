@@ -27,6 +27,8 @@ class Product extends BaseController
         $this->data['pager'] = $product_model->join('cf_product_category', 'cf_product_category.product_id = cf_product.id')->where("category_id", $category_id)->pager;
 
         $product_model->image($this->data['products']);
+        $this->data['title'] =   $this->data['category']->name_vi . $this->data['title'];
+
         // echo "<pre>";
         // print_r($this->data['products']);
         // die();

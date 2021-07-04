@@ -429,7 +429,6 @@
     position: relative
 }
 
-
 .section_menu_today .heading {
     float: left;
     width: 100%;
@@ -569,7 +568,7 @@
     }
 }
 
-.section_menu_today .view_more_cls {
+.view_more_cls {
     font-size: 15px;
     text-transform: none;
     line-height: 45px;
@@ -584,9 +583,10 @@
     border: 1px solid rgba(167, 136, 105, 0.2)
 }
 
-.section_menu_today .view_more_cls:hover {
+.view_more_cls:hover {
     background: #e7b45a;
-    border: 1px solid transparent
+    border: 1px solid transparent;
+    color: white;
 }
 
 .section_gallery {
@@ -1454,6 +1454,7 @@
         background-position-x: -70px
     }
 }
+
 .section_feedback {
     margin-top: 40px;
     background-image: url("../images/bg_menutoday.jpg");

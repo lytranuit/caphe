@@ -1,4 +1,4 @@
-(function($) {
+(function ($) {
     var wigoID = 0;
     var $doc = $(document);
     $.widget('dt.imageFeature', {
@@ -7,7 +7,7 @@
             multiple: false,
             id: null
         },
-        _create: function() {
+        _create: function () {
             var el = this.element;
             var opt = this.options;
             var self = this;
@@ -20,10 +20,8 @@
             if (opt.id)
                 wigoID = opt.id
             if (opt.multiple == false) {
-                this.input = $('<input class="form-control form-control-sm" type="hidden" name="image_id" required="" />').appendTo(el);
-                this.image = $('<img style="max-width:100%;cursor:pointer;border:1px solid #dadada;"data-target="#image-modal-' + wigoID + '" data-toggle="modal" src="' + path + 'assets/images/placeholder.png" class="image_feature" />').appendTo(el);
-            } else {
-                $(el).attr("data-target", "#image-modal-multi").attr("data-toggle", "modal");
+                this.input = $('<input class="form-control form-control-sm" type="hidden" name="image_url" required="" value="/assets/images/placeholder.png"/>').appendTo(el);
+                this.image = $('<img style="max-width:100%;cursor:pointer;border:1px solid #dadada;"  src="/assets/images/placeholder.png" class="image_feature" />').appendTo(el);
             }
             this.modal = $('<div aria-hidden="true" aria-labelledby="image-modalLabel" class="modal fade" id="image-modal-' + wigoID + '" role="dialog" tabindex="-1">' +
                 '<div class="modal-dialog modal-xl" role="document">' +
@@ -55,52 +53,61 @@
                 '        <img class="img-responsive" src="' + path + '{{src}}" style="max-width:100%;"/>' +
                 '    </a>' +
                 '</div>'
-                /*
-                 * BAT SU KIEN
-                 */
+            /*
+             * BAT SU KIEN
+             */
             this._bindEvents();
         },
-        _bindEvents: function() {
+        _bindEvents: function () {
             var self = this;
             var el = this.element;
             var opt = this.options;
             var event_remove;
             // window.addEventListener('paste', ... or
             if (opt.multiple == false) {
-                $(".select_image", self.modal).click(function() {
-                    let active_image = $(".image_tmp.border-info", self.modal);
-                    let id = active_image.data("id");
-                    let src = active_image.data("src");
-                    $(self.image).attr("src", src);
-                    $(self.input).val(id);
-                });
-                $(this.modal).off("dblclick", ".image_tmp").on("dblclick", ".image_tmp", function() {
-                    $(".select_image", self.modal).trigger("click");
-                });
-                $(this.modal).off("click", ".image_tmp").on("click", ".image_tmp", function() {
-                    $(".image_tmp", this.modal).removeClass("border-info");
-                    $(this).addClass("border-info");
-                })
-                $(this.image).click(function() {
-                    self.load_images();
+                $(this.image).click(function () {
+                    CKFinder.popup({
+                        chooseFiles: true,
+                        width: 800,
+                        height: 600,
+                        onInit: function (finder) {
+                            finder.on('files:choose', function (evt) {
+                                var file = evt.data.files.first();
+                                url = file.getUrl();
+                                $(self.image).attr("src", url);
+                                $(self.input).val(url);
+                            });
+
+                            finder.on('file:choose:resizedImage', function (evt) {
+                                url = evt.data.resizedUrl;
+                                $(self.image).attr("src", url);
+                                $(self.input).val(url);
+                            });
+                        }
+                    });
                 });
             } else {
-                $(el).click(function() {
-                    self.load_images();
-                });
-                $(".select_image", self.modal).click(function() {
-                    let data = $(".image_tmp.border-info", self.modal).map(function() {
-                        return { image_id: $(this).data("id"), image: $(this).data("src") };
-                    }).get();
-                    console.log(data);
-                    $(el).trigger("done", data);
-                });
-                $(this.modal).off("click", ".image_tmp").on("click", ".image_tmp", function() {
-                    $(this).toggleClass("border-info");
+                $(el).click(function () {
+                    CKFinder.popup({
+                        chooseFiles: true,
+                        width: 800,
+                        height: 600,
+                        onInit: function (finder) {
+                            finder.on('files:choose', function (evt) {
+                                var files = evt.data.files;
+                                var urls = [];
+                                files.forEach(function (file, i) {
+                                    urls.push(file.getUrl())
+                                });
+                                $(el).trigger("done", urls);
+                            });
+
+                        }
+                    });
                 });
             }
-            $(".delete_image", this.modal).click(function() {
-                $(".image_tmp.border-info", self.modal).each(function() {
+            $(".delete_image", this.modal).click(function () {
+                $(".image_tmp.border-info", self.modal).each(function () {
                     let id = $(this).data("id");
                     let parent = $(this).parent();
                     parent.remove();
@@ -112,7 +119,7 @@
                 });
 
             });
-            $("#input-upload", this.modal).change(function() {
+            $("#input-upload", this.modal).change(function () {
                 let file = $(this)[0].files[0];
                 let m_data = new FormData;
                 m_data.append("file", file);
@@ -122,27 +129,27 @@
                     type: 'POST',
                     contentType: false, // NEEDED, DON'T OMIT THIS (requires jQuery 1.6+)
                     processData: false, // NEEDED, DON'T OMIT THIS
-                }).then(function() {
+                }).then(function () {
                     self.load_images();
                 });
             })
-            $("#btn-upload", this.modal).click(function() {
+            $("#btn-upload", this.modal).click(function () {
                 $("#input-upload", this.modal).click();
             });
 
         },
-        _destroy: function() {},
-        _setOption: function(key, value) {
+        _destroy: function () { },
+        _setOption: function (key, value) {
             var self = this;
             self._super(key, value);
         },
-        load_images: function() {
+        load_images: function () {
             let self = this;
             $.ajax({
                 url: path + "ajax/images",
                 dataType: "JSON",
 
-            }).then(function(data) {
+            }).then(function (data) {
                 $(".image-main", self.modal).empty();
                 html = "";
                 for (let i = 0; i < data.length; i++) {
@@ -153,14 +160,9 @@
                 $(".image-main", self.modal).html(html);
             })
         },
-        set_image: function(image) {
-            let id = image.id;
-            let src = path + image.src;
-            if (image.type == 2) {
-                src = "http://simbaeshop.com" + image.src;
-            }
-            $(this.image).attr("src", src)
-            $(this.input).val(id);
+        set_image: function (image) {
+            $(this.image).attr("src", image)
+            $(this.input).val(image);
         }
     });
 })(jQuery);

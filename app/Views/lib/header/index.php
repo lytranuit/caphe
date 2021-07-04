@@ -2,7 +2,7 @@
 <div id="mySidenav" class="sidenav menu_mobile">
     <div class="top_menu_mobile hidden-lg hidden-md">
         <a href="/" class="logo-wrapper ">
-            <img src="<?= base_url("assets/images/logo.png") ?>" alt="logo Huy tùng Coffee" width="90">
+            <img src="<?= base_url("assets/images/logo/logo.png") ?>" alt="logo Huy tùng Coffee" width="90">
         </a>
     </div>
     <div class="content_memu_mb hidden-lg hidden-md">
@@ -28,16 +28,7 @@
                     </ul>
                 </li>
                 <li class="level0 level-top parent level_ico">
-                    <a class="a_level0" href="#">Menu</a>
-                    <i class="ti-plus hide_close i_level0">
-                    </i>
-                    <ul class="sub-menu" style="display:none;">
-                        <?php foreach ($menus as $row) : ?>
-                            <li class="level1">
-                                <a href="<?= url_product_list($row->id) ?>"><span><?= $row->{pick_language($row, "name_")} ?></span></a>
-                            </li>
-                        <?php endforeach ?>
-                    </ul>
+                    <a class="a_level0" href="/thu-vien">Thư viện</a>
                 </li>
                 <li class="level0 level-top parent level_ico">
                     <a class="a_level0" href="<?= url_news_list(0) ?>">Tin tức</a>
@@ -114,29 +105,17 @@
                                         <ul class="logo_center">
                                             <li class="logo">
                                                 <a href="/" class="logo-wrapper ">
-                                                    <img src="<?= base_url("assets/images/logo.png") ?>" alt="logo Huy tùng Coffee">
+                                                    <img src="<?= base_url("assets/images/logo/logo.png") ?>" alt="logo Huy tùng Coffee">
                                                 </a>
 
                                             </li>
                                         </ul>
                                         <ul class="item_big nav-right hidden-xs hidden-sm">
                                             <li class="nav-item ">
-                                                <a class="a-img" href="#">
-                                                    <span>Menu</span><i class="fa fa-caret-down"></i>
+                                                <a class="a-img" href="/thu-vien">
+                                                    <span>Thư viện</span>
                                                 </a>
-                                                <ul class="item_small hidden-sm hidden-xs">
-                                                    <?php foreach ($menus as $row) : ?>
-                                                        <li class="level1">
-                                                            <a href="<?= url_product_list($row->id) ?>"><span><?= $row->{pick_language($row, "name_")} ?></span></a>
-                                                        </li>
-                                                    <?php endforeach ?>
-
-
-                                                </ul>
                                             </li>
-
-
-
 
                                             <li class="nav-item ">
                                                 <a class="a-img" href="<?= url_news_list(0) ?>">
