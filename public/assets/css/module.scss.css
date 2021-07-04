@@ -89,9 +89,16 @@
     position: relative
 }
 
+.home-slider iframe {
+    height: 758px;
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
     .home-slider .item .img_mobi {
         height: 400px !important
+    }
+    .home-slider iframe {
+        height: 300px;
     }
 }
 
@@ -106,9 +113,9 @@
     }
 }
 
-@media (max-width: 1199px) and (max-width: 767px) {
-    .home-slider .item .img_mobi {
-        height: 200px
+@media (max-width: 425px) {
+    .home-slider iframe {
+        height: 200px;
     }
 }
 

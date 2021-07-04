@@ -8,7 +8,7 @@
         <div class="swiper-wrapper" id="swiper-wrapper-1375be3df72c34ff">
 
             <div class="swiper-slide" role="group" aria-label="2 / 2">
-                <a href="#" class="clearfix" title="Slider 2">
+                <a href="<?= base_url("assets/userfiles/images/4164343.png") ?>" class="clearfix fancybox" title="Slider 2">
                     <picture>
                         <source media="(max-width: 767px)" srcset="<?= base_url("assets/userfiles/images/4164343.png") ?>">
                         <img src="<?= base_url("assets/userfiles/images/4164343.png") ?>" alt="Slider 1">
@@ -16,22 +16,15 @@
                 </a>
             </div>
             <div class="swiper-slide" role="group" aria-label="1 / 2">
-                <a href="#" class="clearfix" title="Slider 1">
-                    <picture>
-                        <source media="(max-width: 767px)" srcset="<?= base_url("assets/images/slider_1.jpg") ?>">
-                        <img src="<?= base_url("assets/images/slider_1.jpg") ?>" alt="Slider 1">
-                    </picture>
-                </a>
+                <div>
+                    <iframe width="100%" src="https://www.youtube.com/embed/CsioskQDXxo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
             </div>
 
         </div>
     </div>
     <script>
         var swiper = new Swiper('.home-slider', {
-            autoplay: {
-                delay: 4500,
-                disableOnInteraction: false
-            },
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
