@@ -603,13 +603,13 @@
 
 @media (max-width: 991px) {
     .section_gallery {
-        padding: 10px 0px;
+        padding: 10px 0px !important;
     }
     .section_sanpham {
-        padding: 10px 0px;
+        margin: 10px 0px !important;
     }
     .section_menu_today {
-        padding: 10px 0px;
+        padding: 10px 0px !important;
     }
 }
 
