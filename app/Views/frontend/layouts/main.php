@@ -23,12 +23,13 @@
     <meta name="copyright" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Build Main CSS -->
-    <link href="<?= base_url("assets/css/all.css?" . time()) ?>" rel="stylesheet" type="text/css">
-    <link href="<?= base_url("assets/css/plugin.scss.css?" . time()) ?>" rel="stylesheet" type="text/css">
-    <link href="<?= base_url("assets/css/base.scss.css?" . time()) ?>" rel="stylesheet" type="text/css">
-    <link href="<?= base_url("assets/css/style.scss.css?" . time()) ?>" rel="stylesheet" type="text/css">
-    <link href="<?= base_url("assets/css/module.scss.css?" . time()) ?>" rel="stylesheet" type="text/css">
-    <link href="<?= base_url("assets/css/responsive.scss.css?" . time()) ?>" rel="stylesheet" type="text/css">
+    <?php $ver = 2 ?>
+    <link href="<?= base_url("assets/css/all.css?" .  $ver) ?>" rel="stylesheet" type="text/css">
+    <link href="<?= base_url("assets/css/plugin.scss.css?" .  $ver) ?>" rel="stylesheet" type="text/css">
+    <link href="<?= base_url("assets/css/base.scss.css?" .  $ver) ?>" rel="stylesheet" type="text/css">
+    <link href="<?= base_url("assets/css/style.scss.css?" .  $ver) ?>" rel="stylesheet" type="text/css">
+    <link href="<?= base_url("assets/css/module.scss.css?" .  $ver) ?>" rel="stylesheet" type="text/css">
+    <link href="<?= base_url("assets/css/responsive.scss.css?" .  $ver) ?>" rel="stylesheet" type="text/css">
 
 
     <link href="<?= base_url("assets/lib/sweetalert/sweetalert.css") ?>" rel="stylesheet" type="text/css">
@@ -44,7 +45,7 @@
     </style>
     <script src="<?= base_url("assets/js/jquery.min.js") ?>"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js"></script>
-    <script src="<?= base_url("assets/js/caphe.js?" . time()) ?>"></script>
+    <script src="<?= base_url("assets/js/caphe.js?" .  $ver) ?>"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="<?= base_url("assets/lib/fancybox/jquery.fancybox.js") ?>"></script>
