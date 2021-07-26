@@ -8,10 +8,10 @@
         <div class="swiper-wrapper" id="swiper-wrapper-1375be3df72c34ff">
 
             <div class="swiper-slide" role="group" aria-label="2 / 2">
-                <a href="<?= base_url("assets/userfiles/images/4164343.png") ?>" class="clearfix fancybox" title="Slider 2">
+                <a href="<?= base_url("assets/userfiles/images/4164343.png?v1") ?>" class="clearfix fancybox" title="Slider 2">
                     <picture>
-                        <source media="(max-width: 767px)" srcset="<?= base_url("assets/userfiles/images/4164343.png") ?>">
-                        <img src="<?= base_url("assets/userfiles/images/4164343.png") ?>" alt="Slider 1">
+                        <source media="(max-width: 767px)" srcset="<?= base_url("assets/userfiles/images/4164343.png?v1") ?>">
+                        <img src="<?= base_url("assets/userfiles/images/4164343.png?v1") ?>" alt="Slider 1">
                     </picture>
                 </a>
             </div>
