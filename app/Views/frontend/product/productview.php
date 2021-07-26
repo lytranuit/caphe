@@ -38,7 +38,7 @@
                                     <div class="product-item position-relative product-item-main">
                                         <a href="<?= url_product($row->product_id) ?>" class="thumb flip effect-ming d-block" title="<?= $row->{pick_language($row, 'name_')} ?>">
                                             <div class="item-image position-relative w-100 m-0 aspect ratio1by1" wfd-id="602">
-                                                <img src="<?= base_url(isset($row->image->src) ? $row->image->src : "assets/images/placeholder.png") ?>" data-src="<?= base_url(isset($row->image->src) ? $row->image->src : "assets/images/placeholder.png") ?>" class="d-block image-1 img img-contain position-absolute w-100 h-100 lazy" alt="<?= $row->{pick_language($row, 'name_')} ?>">
+                                                <img src="<?= base_url(isset($row->image_url) ? $row->image_url : "assets/images/placeholder.png") ?>" data-src="<?= base_url(isset($row->image_url) ? $row->image_url : "assets/images/placeholder.png") ?>" class="d-block image-1 img img-contain position-absolute w-100 h-100 lazy" alt="<?= $row->{pick_language($row, 'name_')} ?>">
                                                 <div class="w-100 h-100 overlay" wfd-id="603"></div>
                                             </div>
                                         </a>

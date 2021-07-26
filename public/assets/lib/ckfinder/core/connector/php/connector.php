@@ -11,6 +11,7 @@
  * this file is part of the Source Code of CKFinder.
  */
 
+print(__DIR__ . '/vendor/autoload.php');
 require_once __DIR__ . '/vendor/autoload.php';
 
 use CKSource\CKFinder\CKFinder;

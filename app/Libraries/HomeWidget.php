@@ -67,7 +67,7 @@ class HomeWidget
         $product_model = model("ProductModel");
         $this->data['categories'] = $Category_model->where("is_menu", 1)->orderby("date", "DESC")->findAll();
         foreach ($this->data['categories'] as $key => &$row) {
-            $products = $product_model->get_product($row->id, "", 0, NULL);
+            $products = $product_model->get_product($row->id, "", 0, 6);
             if (!empty($products)) {
                 $product_model->relation($products, array('image'));
 

@@ -191,14 +191,13 @@ class Product extends BaseController
         //echo "<pre>";
         //print_r($posts);
         //die();
-        $posts = $Product_model->image($posts);
         $data = array();
         if (!empty($posts)) {
             foreach ($posts as $post) {
                 $nestedData['id'] = $post->id;
                 $nestedData['name_vi'] = $post->name_vi;
                 $nestedData['code'] = $post->code;
-                $image = isset($post->image->src) ? base_url($post->image->src) : "";
+                $image = base_url($post->image_url);
                 $nestedData['image'] = "<img src='$image' width='100'/>";
                 $nestedData['price'] =  number_format($post->price, 0, ",", ".") . "đ";
                 // $image = isset($post->image->src) ? base_url() . $post->image->src : "";

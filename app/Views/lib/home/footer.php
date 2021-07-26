@@ -27,14 +27,14 @@
         <div class="hotline-phone-ring-circle"></div>
         <div class="hotline-phone-ring-circle-fill"></div>
         <div class="hotline-phone-ring-img-circle">
-            <a href="tel:0353928135" class="pps-btn-img">
+            <a href="tel:0915.648.768" class="pps-btn-img">
                 <img src="<?= base_url("assets/images/icon-2.png") ?>" alt="Số điện thoại" width="50">
             </a>
         </div>
     </div>
     <div class="hotline-bar">
-        <a href="tel:0353928135">
-            <span class="text-hotline">035.392.8135</span>
+        <a href="tel:0915.648.768">
+            <span class="text-hotline">0915.648.768</span>
         </a>
     </div>
 </div>

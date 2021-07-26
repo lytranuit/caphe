@@ -29,7 +29,7 @@
                     <div class="swiper-container gallery-top swiper-container-initialized swiper-container-horizontal">
                         <div class="swiper-wrapper" id="lightgallery" aria-live="polite">
                             <a class="swiper-slide" title="Click để xem" role="group">
-                                <img src="<?= base_url(isset($info->image->src) ? $info->image->src : "assets/images/placeholder.png") ?>" data-src="<?= base_url(isset($info->image->src) ? $info->image->src : "assets/images/placeholder.png") ?>" alt="Cà phê Trứng" data-image="<?= base_url(isset($info->image->src) ? $info->image->src : "assets/images/placeholder.png") ?>" class="img-responsive mx-auto d-block lazyload loaded" data-was-processed="true">
+                                <img src="<?= base_url(isset($info->image_url) ? $info->image_url : "assets/images/placeholder.png") ?>" data-src="<?= base_url(isset($info->image_url) ? $info->image_url : "assets/images/placeholder.png") ?>" alt="Cà phê Trứng" data-image="<?= base_url(isset($info->image_url) ? $info->image_url : "assets/images/placeholder.png") ?>" class="img-responsive mx-auto d-block lazyload loaded" data-was-processed="true">
                             </a>
                             <?php foreach ($info->image_other as $row) : ?>
                                 <a class="swiper-slide" title="Click để xem" role="group">
@@ -42,7 +42,7 @@
                     <div class="swiper-container gallery-thumbs swiper-container-initialized swiper-container-horizontal swiper-container-thumbs">
                         <div class="swiper-wrapper" id="swiper-wrapper-7123e85545c32ce7" aria-live="polite">
                             <div class="swiper-slide swiper-slide-visible swiper-slide-active swiper-slide-thumb-active" role="group">
-                                <img src="<?= base_url(isset($info->image->src) ? $info->image->src : "assets/images/placeholder.png") ?>" data-src="<?= base_url(isset($info->image->src) ? $info->image->src : "assets/images/placeholder.png") ?>" alt="Cà phê Trứng" data-image="<?= base_url(isset($info->image->src) ? $info->image->src : "assets/images/placeholder.png") ?>" class="lazyload loaded" data-was-processed="true">
+                                <img src="<?= base_url(isset($info->image_url) ? $info->image_url : "assets/images/placeholder.png") ?>" data-src="<?= base_url(isset($info->image_url) ? $info->image_url : "assets/images/placeholder.png") ?>" alt="Cà phê Trứng" data-image="<?= base_url(isset($info->image_url) ? $info->image_url : "assets/images/placeholder.png") ?>" class="lazyload loaded" data-was-processed="true">
                             </div>
                             <?php foreach ($info->image_other as $row) : ?>
                                 <div class="swiper-slide swiper-slide-visible swiper-slide-active swiper-slide-thumb-active" role="group">
@@ -60,8 +60,8 @@
                     <div class="product-single-gallery">
                         <div class="content--slide-images-2">
                             <div class="single-image">
-                                <a href="<?= base_url(isset($info->image->src) ? $info->image->src : "assets/images/placeholder.png") ?>" data-fancybox="product-log-gallery-01" tabindex="0">
-                                    <span class="h-rectangle"><span class="h-rectangle__inner h-bg-cover" style="background-image: url(<?= base_url(isset($info->image->src) ? $info->image->src : "assets/images/placeholder.png") ?>);"></span></span>
+                                <a href="<?= base_url(isset($info->image_url) ? $info->image_url : "assets/images/placeholder.png") ?>" data-fancybox="product-log-gallery-01" tabindex="0">
+                                    <span class="h-rectangle"><span class="h-rectangle__inner h-bg-cover" style="background-image: url(<?= base_url(isset($info->image_url) ? $info->image_url : "assets/images/placeholder.png") ?>);"></span></span>
                                 </a>
                             </div>
                             <?php foreach ($info->image_other as $row) : ?>
@@ -140,7 +140,7 @@
                                         <div class="product-item position-relative product-item-main mb-3">
                                             <a href="<?= url_product($row->id) ?>" class="thumb flip effect-ming d-block" title="<?= $row->{pick_language($row, 'name_')} ?>">
                                                 <div class="item-image position-relative w-100 m-0 aspect ratio1by1" wfd-id="602">
-                                                    <img src="<?= base_url(isset($row->image->src) ? $row->image->src : "assets/images/placeholder.png") ?>" data-src="<?= base_url(isset($row->image->src) ? $row->image->src : "assets/images/placeholder.png") ?>" class="d-block image-1 img img-contain position-absolute w-100 h-100 lazy" alt="<?= $row->{pick_language($row, 'name_')} ?>">
+                                                    <img src="<?= base_url(isset($row->image_url) ? $row->image_url : "assets/images/placeholder.png") ?>" data-src="<?= base_url(isset($row->image_url) ? $row->image_url : "assets/images/placeholder.png") ?>" class="d-block image-1 img img-contain position-absolute w-100 h-100 lazy" alt="<?= $row->{pick_language($row, 'name_')} ?>">
                                                     <div class="w-100 h-100 overlay" wfd-id="603"></div>
                                                 </div>
                                             </a>

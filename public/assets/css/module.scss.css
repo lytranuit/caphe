@@ -118,7 +118,22 @@
         height: 200px;
     }
 }
+@media (min-width: 767px) {
+    .home-slider iframe {
+        height: 300px;
+    }
+}
+@media (min-width: 1023px) {
+    .home-slider iframe {
+        height: 400px;
+    }
+}
 
+@media (min-width: 1199px) {
+    .home-slider iframe {
+        height: 750px;
+    }
+}
 .section_tab_product h2 {
     font-size: 1.71429em;
     text-transform: uppercase;

@@ -221,6 +221,7 @@
 <script src="<?= base_url("assets/lib/image_feature/jquery.image.js") ?>"></script>
 
 <!--<script src="https://cdn.ckeditor.com/ckeditor5/12.3.1/classic/ckeditor.js"></script>-->
+<script src="<?= base_url("assets/lib/ckfinder/ckfinder.js") ?>"></script>
 <script src="<?= base_url("assets/lib/ckeditor/ckeditor.js") ?>"></script>
 <script type='text/javascript'>
     var tin = <?= json_encode($tin) ?>;
@@ -236,10 +237,10 @@
             id: 'multi'
         }).on("done", function(event, ...data) {
             for (let i = 0; i < data.length; i++) {
-                let row = data[i];
-                row['image'] = '<img src="' + row['image'] + '" width="200"/>';
-
-                row['action'] = '<a href="#" class="btn btn-danger btn-sm image_remove" data-id="' + row['image_id'] + '"><i class="far fa-trash-alt"></i></a>';
+                row = [];
+                row['image'] = '<img src="' + data[i] + '" width="200"/>';
+                row['src'] = data[i];
+                row['action'] = '<a href="#" class="btn btn-danger btn-sm image_remove"><i class="far fa-trash-alt"></i></a>';
 
                 $('#quanlyimage').dataTable().fnAddData(row);
             }
@@ -279,8 +280,8 @@
             success: "valid"
         });
 
-        if (tin.image) {
-            $(".image_ft").imageFeature("set_image", tin.image);
+        if (tin.image_url) {
+            $(".image_ft").imageFeature("set_image", tin.image_url);
         }
         $("#form-dang-tin").validate({
             highlight: function(input) {

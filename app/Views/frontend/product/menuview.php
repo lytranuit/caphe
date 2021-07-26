@@ -40,7 +40,7 @@
                                             <div class="product_mini_2 clearfix">
                                                 <div class="img_product">
                                                     <a class="product-img" title="<?= $row->{pick_language($row, 'name_')} ?>">
-                                                        <img class="lazyload loaded" src="<?= base_url(isset($row->image->src) ? $row->image->src : "assets/images/placeholder.png") ?>" data-src="<?= base_url(isset($row->image->src) ? $row->image->src : "assets/images/placeholder.png") ?>" alt="<?= $row->{pick_language($row, 'name_')} ?>" data-was-processed="true">
+                                                        <img class="lazyload loaded" src="<?= base_url(isset($row->image_url) ? $row->image_url : "assets/images/placeholder.png") ?>" data-src="<?= base_url(isset($row->image_url) ? $row->image_url : "assets/images/placeholder.png") ?>" alt="<?= $row->{pick_language($row, 'name_')} ?>" data-was-processed="true">
                                                     </a>
                                                 </div>
                                                 <div class="product-info">

@@ -13,7 +13,7 @@ class ProductModel extends Model
     protected $returnType     = 'App\Entities\Product';
     protected $useSoftDeletes = true;
 
-    protected $allowedFields = ['slug', 'code', 'price', 'name_vi', 'description_vi', 'element_vi', 'uses_vi', 'guide_vi', 'name_en', 'description_en', 'element_en', 'uses_en', 'guide_en', 'name_jp', 'description_jp', 'element_jp', 'uses_jp', 'guide_jp', 'date', 'user_id', 'image_id'];
+    protected $allowedFields = ['slug', 'code', 'price', 'name_vi', 'description_vi', 'element_vi', 'uses_vi', 'guide_vi', 'name_en', 'description_en', 'element_en', 'uses_en', 'guide_en', 'name_jp', 'description_jp', 'element_jp', 'uses_jp', 'guide_jp', 'date', 'user_id', 'image_id', 'image_url'];
 
 
 
