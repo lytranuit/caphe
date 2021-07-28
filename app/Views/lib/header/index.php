@@ -59,7 +59,7 @@
                     <div class="list-inline f-right">
                         <div class="hotline-bar" wfd-id="5">
                             <a href="tel:0913445558">
-                                <span class="text-hotline">Hot line: 0913.445.558</span>
+                                <span class="text-hotline">Hot line: 0915.648.768</span>
                             </a>
                         </div>
                     </div>
