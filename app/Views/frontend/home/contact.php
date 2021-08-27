@@ -58,7 +58,7 @@
                                 </li>
                                 <li wfd-id="100">
 
-                                    Hotline: <a class="hai01" href="tel:0913445558">0913.445.558</a>
+                                    Hotline: <a class="hai01" href="tel:0915648768">0915.648.768</a>
 
                                 </li>
                                 <li wfd-id="99">
