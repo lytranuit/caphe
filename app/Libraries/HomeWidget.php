@@ -100,7 +100,6 @@ class HomeWidget
         $news_model = model("NewsModel");
         $this->data['news'] = $news_model->orderby("id", "DESC")->limit(10)->findAll();
 
-        $news_model->image($this->data['news']);
         //echo "<pre>";
         //print_r($this->data['news']);
         //die();

@@ -87,7 +87,7 @@
                                             Ảnh đại diện
                                         </div>
                                         <div class="card-body">
-                                            <div class="image_ft text-center"></div>
+                                            <div id="image_url" class="image_ft"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -126,7 +126,7 @@
 <?= $this->section('script') ?>
 
 <script src="<?= base_url("assets/lib/mustache/mustache.min.js") ?>"></script>
-<script src="<?= base_url("assets/lib/image_feature/jquery.image.js") ?>"></script>
+<script src="<?= base_url("assets/lib/image_feature/jquery.image_v2.js") ?>"></script>
 
 <!--<script src="https://cdn.ckeditor.com/ckeditor5/12.3.1/classic/ckeditor.js"></script>-->
 <script src="<?= base_url("assets/lib/ckfinder/ckfinder.js") ?>"></script>
@@ -158,8 +158,8 @@
             success: "valid"
         });
 
-        if (tin.image) {
-            $(".image_ft").imageFeature("set_image", tin.image);
+        if (tin.image_url) {
+            $(".image_ft").imageFeature("set_image", tin.image_url);
         }
         $("#form-dang-tin").validate({
             highlight: function(input) {

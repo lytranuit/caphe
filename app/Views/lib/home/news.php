@@ -19,7 +19,7 @@
                                             <div class="image-blog-left a-center">
 
                                                 <a class="img_bot" href="<?= url_news($row->id) ?>">
-                                                    <img class="lazyload" src="<?= base_url(isset($row->image_url)) ?>" data-src="<?= base_url(isset($row->image_url)) ?>" title="<?= $row->{pick_language($row, 'title_')} ?>" alt="<?= $row->{pick_language($row, 'title_')} ?>" data-was-processed="true">
+                                                    <img class="lazyload" src="<?= base_url($row->image_url) ?>" data-src="<?= base_url($row->image_url) ?>" title="<?= $row->{pick_language($row, 'title_')} ?>" alt="<?= $row->{pick_language($row, 'title_')} ?>" data-was-processed="true">
                                                 </a>
 
                                             </div>

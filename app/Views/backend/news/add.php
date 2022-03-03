@@ -81,7 +81,7 @@
                                             Ảnh đại diện
                                         </div>
                                         <div class="card-body">
-                                            <div class="image_ft text-center"></div>
+                                            <div id="image_url" class="image_ft"></div>
                                         </div>
                                     </div>
                                 </div>

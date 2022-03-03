@@ -35,7 +35,7 @@ class Home extends BaseController
         //die();  
 
         $library_model = model("LibraryModel");
-        $this->data['libraries'] = $library_model->findAll();
+        $this->data['libraries'] = $library_model->orderby("id", "DESC")->findAll();
 
 
         $library_model->image($this->data['libraries']);
