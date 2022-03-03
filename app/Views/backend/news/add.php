@@ -123,6 +123,7 @@
 <script src="<?= base_url("assets/lib/image_feature/jquery.image.js") ?>"></script>
 
 <!--<script src="https://cdn.ckeditor.com/ckeditor5/12.3.1/classic/ckeditor.js"></script>-->
+<script src="<?= base_url("assets/lib/ckfinder/ckfinder.js") ?>"></script>
 <script src="<?= base_url("assets/lib/ckeditor/ckeditor.js") ?>"></script>
 <script type='text/javascript'>
     var allEditors = document.querySelectorAll('.edit');
